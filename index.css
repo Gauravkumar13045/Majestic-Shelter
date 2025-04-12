@@ -1,0 +1,98 @@
+body{
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #f0f0f0; /* Fallback color */
+    font-family: 'Arial', sans-serif; /* Fallback font */
+
+
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.contactUs{
+    margin-top: 0.2em;
+    position: relative;
+    
+    &:hover{
+        color: rgb(0, 0, 0);
+        
+    }
+}
+.container-fluid{
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+}
+#carouselExampleAutoplaying {
+    max-height: 60vh; /* Set the maximum height of the slider */
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  #carouselExampleAutoplaying .carousel-item img {
+    object-fit: cover; /* Crop images to fit the slider dimensions */
+    width: 100%; /* Ensure images take up the full width of the slider */
+    height: 50vh; /* Set a consistent height for all images */
+
+  }
+
+  .carousel-caption h5 {
+    font-size: 2.5rem; /* Larger font size for a premium feel */
+    font-weight: bold;
+    color: #f8f9fa; /* Soft white for elegance */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    font-family: 'Playfair Display', serif; /* Premium serif font */
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem; /* Slightly smaller for description */
+    color: #e0e0e0; /* Light gray for contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    font-family: 'Lora', serif; /* Elegant serif font */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    max-width: 70%; /* Centered and contained */
+    margin: auto;
+  }
+
+  /* .slideimg{
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    display: none;
+  } */
+
+  .pixelated-img {
+    image-rendering: pixelated; /* Makes the image rendering pixelated */
+    image-rendering: -moz-crisp-edges; /* For Firefox */
+    image-rendering: crisp-edges; /* For other browsers */
+   
+  }
+
+  @media (max-width: 768px) {
+    #carouselExampleAutoplaying .carousel-item img {
+        height: 30vh; /* Smaller height for smaller screens */
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    #carouselExampleAutoplaying .carousel-item img {
+        height: 20vh; /* Smaller height for smaller screens */
+    }
+}
+
+.navbar-nav {
+  justify-content: flex-start; /* Align items to the right */
+  display: none;
+}
