@@ -14,69 +14,79 @@
 
 <body>
 
+  <div class="image-container">
+    <img src="logobg.png" class="img-fluid" alt="logo">
+  </div>
 
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" style="border: none; background-color: transparent; ">
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-    <!-- <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form> -->
-<br>
-<br>
-
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    
+    <div class="container-fluid d-flex">
+      <!-- Toggle Button -->
+       
+      <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
+      <!-- Login Icon -->
+      <i class="fa-solid fa-circle-user fa-xl loginIcon ms-auto" style="color: #d0d0d0;"></i>
+&NonBreakingSpace;
+&NonBreakingSpace;
+&NonBreakingSpace;
+
+      <!-- Search Bar -->
+      
+        <div class="d-flex flex-grow-1 ">
+          <form class="d-flex flex-grow-1 " role="search">
+            <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search" id="searchInput1">
+            <input class="form-control me-2 w-40" type="search" placeholder="Search" aria-label="Search" id="searchInput2" >
+            <input class="form-control me-2 w-30" type="search" placeholder="Search" aria-label="Search" id="searchInput3">
+            <button class="btn btn-outline-success"  type="submit"  id="submitBtn1">Search</button>
+            <button class="btn btn-outline-success"  type="submit" id="submitBtn2" >Search</button>
+            <button class="btn btn-outline-success"  type="submit" id="submitBtn3" >Search</button>
+  
+          </form>
+        </div>
+
+      <!-- Collapsible Navbar Content -->
+      <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">About Us</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">Store</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">Gallery</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
           </li>
 
-
-
-          <!-- <i class="fa-solid fa-angle-down " style="color: #000000;"></i> -->
+        
 
 
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle contactUs" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false" style="border: none; background-color: transparent; color: rgb(255, 255, 255); ">
+              aria-expanded="false" style="border: none; background-color: transparent; color: rgb(174, 174, 174);">
               Contact Us
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">FAQ</a></li>
               <li><a class="dropdown-item" href="#">Services</a></li>
               <li><a class="dropdown-item" href="#">Callback</a></li>
-
             </ul>
           </div>
         </ul>
-
-   </div>
+      </div>
     </div>
   </nav>
-</nav>
+
   <!-- Slider Bar -->
 
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -120,16 +130,6 @@
   </div>
 
   <!-- <img src="logo.png" class="img-fluid" alt="logo" width="2vw" height="2vw"> -->
-
-
-
-
-
-
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4JQkC+hVqc2pM8ODewa9r"

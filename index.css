@@ -4,8 +4,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: #f0f0f0; /* Fallback color */
-    font-family: 'Arial', sans-serif; /* Fallback font */
+    background-color: #f0f0f0; 
+    font-family: 'Arial', sans-serif; 
 
 
 }
@@ -13,74 +13,172 @@ body{
     width: 100%;
     height: auto;
     
-    
 }
 .contactUs{
     margin-top: 0.2em;
     position: relative;
-    
-    &:hover{
-        color: rgb(0, 0, 0);
-        
-    }
+
 }
+.contactUs:hover {
+      color: rgb(255, 255, 255); 
+  }
+
 .container-fluid{
     text-align: right;
     justify-content: right;
     align-items: right;
 }
 #carouselExampleAutoplaying {
-    max-height: 60vh; /* Set the maximum height of the slider */
-    overflow: hidden; /* Ensure content doesn't overflow */
+    max-height: 60vh; 
+    overflow: hidden;
   }
   
   #carouselExampleAutoplaying .carousel-item img {
-    object-fit: cover; /* Crop images to fit the slider dimensions */
-    width: 100%; /* Ensure images take up the full width of the slider */
-    height: 50vh; /* Set a consistent height for all images */
+    object-fit: cover;
+    width: 100%; 
+    height: 50vh; 
 
   }
 
   .carousel-caption h5 {
-    font-size: 2.5rem; /* Larger font size for a premium feel */
+    font-size: 2.5rem; 
     font-weight: bold;
-    color: #f8f9fa; /* Soft white for elegance */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
-    font-family: 'Playfair Display', serif; /* Premium serif font */
+    color: #f8f9fa; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    font-family: 'Playfair Display', serif;
   }
   
   .carousel-caption p {
-    font-size: 1.5rem; /* Slightly smaller for description */
-    color: #e0e0e0; /* Light gray for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    font-family: 'Lora', serif; /* Elegant serif font */
+    font-size: 1.5rem; 
+    color: #e0e0e0; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+    font-family: 'Lora', serif;
   }
   
   .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for a modern look */
-    max-width: 70%; /* Centered and contained */
+    border-radius: 10px; 
+    max-width: 70%; 
     margin: auto;
   }
 
-  /* .slideimg{
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: pixelated;
-    display: none;
-  } */
+
 
   .pixelated-img {
-    image-rendering: pixelated; /* Makes the image rendering pixelated */
-    image-rendering: -moz-crisp-edges; /* For Firefox */
-    image-rendering: crisp-edges; /* For other browsers */
-   
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
+
+  .navbar-nav {
+    justify-content: flex-start; 
+    display: none;
+  }
+
+  .image-container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */ /* Full viewport height */
+  }
+  .img-fluid{
+      width: 10em;
+      height: auto;
+      position: relative;
+      z-index: 1;
+  }
+
+  .loginIcon{
+    top: 0.4em;
+    position: relative;
+    cursor: pointer;
+    }
+    .loginIcon:hover {
+      color: rgb(255, 255, 255) !important; 
+  }
+
+  .loginIcon2{
+    display: none;
+    position: relative;
+  }
+
+
+#searchInput2{
+  display: none;
+}
+#submitBtn2{
+  display: none;
+}
+#searchInput3{
+  display: none;
+}
+#submitBtn3{
+  display: none;
+}
+.searchBar{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media (max-width: 768px) {
     #carouselExampleAutoplaying .carousel-item img {
-        height: 30vh; /* Smaller height for smaller screens */
+        height: 30vh;
     }
+    .loginIcon{
+      display: none;
+      position: relative;
+      left: 0.5em;
+    }
+    #searchInput1{
+      display: none;
+    }
+    #submitBtn1{
+      display: none;
+    }
+    #searchInput3{
+      display: none;
+    }
+    #submitBtn3{
+      display: none;
+    }
+    #searchInput2{
+      display: block;
+    }
+    #submitBtn2{
+      display: block;
+    }
+    .loginIcon2{
+      display: flex;
+      position: relative;
+      left: 2em;
+    }
+ 
+
 }
 
 
@@ -88,11 +186,38 @@ body{
 
 @media (max-width: 600px) {
     #carouselExampleAutoplaying .carousel-item img {
-        height: 20vh; /* Smaller height for smaller screens */
+        height: 20vh;
     }
+    .loginIcon{
+      display: none;
+    }
+    /* .loginIcon2{
+      display: flex;
+      position: relative;
+    } */
+    #searchInput1{
+      display: none;
+    }
+    #submitBtn1{
+      display: none;
+    }
+    #searchInput2{
+      display: none;
+    }
+    #submitBtn2{
+      display: none;
+    }
+    #searchInput3{
+      display: block;
+      position: relative;
+      margin-top: 1.1em;
+    }
+    #submitBtn3{
+      display: block;
+      position: relative;
+      margin-top: 1.1em;
+    }
+
+    
 }
 
-.navbar-nav {
-  justify-content: flex-start; /* Align items to the right */
-  display: none;
-}
