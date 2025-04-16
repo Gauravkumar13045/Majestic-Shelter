@@ -89,7 +89,6 @@ body{
   }
 
   .loginIcon{
-    top: 0.4em;
     position: relative;
     cursor: pointer;
     }
@@ -125,10 +124,195 @@ body{
 
 
 
+/* Content Styles */
+.content {
+  position: relative;
+  z-index: 1; 
+  color: #ffffff; 
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold; 
+ color: #ffffff;
+}
+
+.content p {
+  font-size: 1.5rem; 
+  margin-bottom: 2rem; 
+}
+
+.btn {
+  padding: 1rem 2rem; 
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  font-size: 1.2rem; 
+}
+
+.btn:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.cards{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 0em;
+  border-radius: 15px;
+}
+#flip-card-maker{
+column-gap: 5em;
+}
+
+
+/* Flip Card Container */
+.flip-card {
+  width: 300px; /* Card width */
+  height: 200px; /* Card height */
+  perspective: 1000px; /* Adds 3D effect */
+  margin: auto ; /* Centers the card */
+}
+
+/* Inner Wrapper for Flip Animation */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Smooth flipping effect */
+  transform-style: preserve-3d; /* Ensures both sides are in 3D */
+}
+
+/* Front of the Card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back side during flipping */
+  border-radius: 25px; /* Curved corners for premium feel */
+}
+
+
+
+/* Back Design */
+.flip-card-back {
+  background-color: #ff8c00; /* Premium orange color */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg); /* Flip the back side */
+  border-radius: 25px; /* Consistent curves */
+}
+
+/* Flip Animation on Hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Flips the card */
+}
 
 
 
 
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #007bff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.video-container {
+  max-width: 100%; 
+  max-height: 50%;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer; 
+  position: relative; /* Ensure the video is properly positioned */
+  z-index: 1; /* Lower z-index to place it below the flip cards */
+}
+video {
+  width: 100%; 
+  /* border: 5px solid #ddd; */
+  border-radius: 15px;
+}
+
+.flip-card {
+  position: relative; /* Ensure proper stacking context */
+  z-index: 2; /* Higher z-index to place it above the video */
+}
+
+.length{
+  position: relative;
+  display: grid;
+  width: 50vw;
+  height: 50%;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+
+.imagecard{
+  width: 40vh;
+  height: 50vh;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1; 
+  
+}
+
+.loginform{
+  border: 5px solid #525252;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin-top: -50em;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#inputCity {
+  width: 100%;
+  padding: 10px;
+}
 
 
 
@@ -175,9 +359,8 @@ body{
     .loginIcon2{
       display: flex;
       position: relative;
-      left: 2em;
+      /* left: 2em; */
     }
- 
 
 }
 
@@ -217,7 +400,14 @@ body{
       position: relative;
       margin-top: 1.1em;
     }
+    .flip-card {
+      width: 150px; /* Card width */
+      height: 75px; /* Card height */
+      perspective: 1000px; /* Adds 3D effect */
+      margin: auto ; /* Centers the card */
+      display: flex;
 
+    }
     
 }
 
