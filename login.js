@@ -18,3 +18,21 @@
         }, false);
     });
 })();
+
+
+
+let loginCreateAccount = document.querySelector(".loginform"); 
+let linkToLogin = document.getElementById("hacked1");
+let realpageLogin = document.querySelector(".loginaccount-small-screen");
+let backsignUp = document.querySelector(".backsignUp"); // Fixed method name
+
+linkToLogin.addEventListener("click", function (event) {
+    event.preventDefault(); 
+    loginCreateAccount.style.display = "none"; 
+    realpageLogin.style.display = "block"; 
+});
+
+backsignUp.addEventListener("click", () => {
+    loginCreateAccount.style.display = "block"; 
+    realpageLogin.style.display = "none"; 
+});

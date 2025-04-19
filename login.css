@@ -144,7 +144,7 @@ margin-right: 25%;
 .form-label-checker{
   position: relative;
   display: flex;
- right: 32%;
+ right: 32.5%;
   align-items: right;
   justify-content: right;
 }
@@ -213,6 +213,15 @@ margin-right: 3%;
   justify-content: right;
   
 }
+.loginaccount-small-screen{
+  display: none;
+}
+.customerservices1{
+  display: none;
+}
+
+
+
 
 
 
@@ -249,6 +258,57 @@ margin-right: 3%;
   .loginaccount{
     display: none;
   }
+  .loginaccount-small-screen{
+    display: none;
+  }
+  .customerservices{
+    display: none;
+  }
+  .customerservices1{
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+  }
+  .loginaccount-small-screen{
+    display: none;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    
+  }
+  #loginizer-small-screen{
+    text-align: left;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: relative;
+
+    
+  }
+  #loginizer-text2-small-screen{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+  }
+  #loginizer-text2-span-small-screen{
+    color: skyblue;
+    position: relative;
+    text-align: center;
+  }
+  .signin-icons{
+
+    position: relative;
+    display: flex;
+    right: 0%;
+    gap: 1rem;
+    align-items: center;  
+    justify-content: center;
+  }
+  
+
+  
 }
 
 @media (max-width: 576px) {

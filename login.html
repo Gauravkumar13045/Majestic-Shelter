@@ -26,14 +26,15 @@
 
 
     <div class="loginform" data-bs-theme="dark">
-      <h6 style="color: aliceblue ;">START FOR FREE</h6>
-      <h1 style="color: aliceblue ;"><b>Create new <span id="highlight"><b>account</b></span></b><b
-          style="color: skyblue ;">...</b></h1>
+      <div class="starter">
+        <h6 style="color: aliceblue ;">START FOR FREE</h6>
+        <h1 style="color: aliceblue ;"><b>Create new <span id="highlight"><b>account</b></span></b><b
+            style="color: skyblue ;">...</b></h1>
 
-      <p style="color: aliceblue ;">Already A Member?<a href="index.html"
-          style="color: skyblue ; text-decoration: none; cursor: pointer; z-index: 1; top: 5%;" id="hacked1"> Log
-          In</a></p>
-
+        <p style="color: aliceblue ;">Already A Member?<a href="#"
+            style="color: skyblue ; text-decoration: none; cursor: pointer; z-index: 1; top: 5%;" id="hacked1"> Log
+            In</a></p>
+      </div>
 
 
 
@@ -67,7 +68,7 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control w-25" id="email" name="email" required style="z-index: 1;">
+            <input type="email" class="form-control w-25" id="email" name="email" required style="z-index: 1;" >
             <div class="valid-feedback">
               Valid email!
             </div>
@@ -78,7 +79,7 @@
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control w-25" id="password" name="password" required>
+            <input type="password" class="form-control w-25" id="password" name="password" required >
             <div class="valid-feedback">
               Password looks good!
             </div>
@@ -132,7 +133,7 @@
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control small-screen" id="email1" name="email" required>
+            <input type="email" class="form-control small-screen" id="email1" name="email"  required>
             <div class="valid-feedback">
               Valid email!
             </div>
@@ -143,7 +144,7 @@
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control small-screen w-100" id="password1" name="password" required>
+            <input type="password" class="form-control small-screen w-100" id="password1" name="password"  required>
           </div>
           <div class="valid-feedback">
             Password looks good!
@@ -177,7 +178,7 @@
       </div>
     </div>
 
-    <!-- Login account -->
+    <!-- Login account for large screen -->
 
 
     <div class="loginaccount">
@@ -189,9 +190,10 @@
         novalidate>
         <div class="row mb-3">
           <label for="inputEmail3" class="col-sm-0 col-form-label form-label-checker"
-            style="color: rgb(255, 255, 255);">Email</label>
+            style="color: rgb(255, 255, 255);">Email&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+          </label>
           <div class="col-sm-10">
-            <input type="email" class="form-control ms-auto w-25" id="inputEmail3" placeholder="Email" required>
+            <input type="email" class="form-control ms-auto w-25" id="inputEmail3" required>
             <div class="valid-feedback aimed-feedback">
               Valid email!
             </div>
@@ -206,7 +208,7 @@
           <label for="inputPassword3" class="col-sm-12 col-form-label form-label-checker"
             style="color: rgb(255, 255, 255);">Password</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control ms-auto w-25" id="inputPassword3" placeholder="Password"
+            <input type="password" class="form-control ms-auto w-25" id="inputPassword3" 
               required>
 
             <div class="valid-feedback aimed-feedback">
@@ -236,7 +238,7 @@
       <hr style="border: 1px solid skyblue; width: 10%; text-align: right; margin-left: 76.5%; margin-top: -1.8%;">
 
       <div class="signin-icons">
-        <a href="https://www.google.com">
+        <a href="https://gauravkumar13045.github.io/Prestige/">
           <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google Icon" width="40">
         </a>
 
@@ -244,14 +246,10 @@
           <img src="instagramIcon.png" alt="Instagram Icon" width="45">
         </a>
 
-        <a href="https://www.github.com">
+        <a href="https://github.com/Gauravkumar13045/Majestic-Shelter">
           <img src="githubicons.png" alt="Github Icon" width="45">
         </a>
       </div>
-
-
-
-
 
 
 
@@ -263,6 +261,97 @@
       <a href="#" style="color: skyblue; text-decoration: none;" class="support-team-login">Customer Care</a>
     </div>
 
+
+    <!-- Login account for small screen -->
+
+
+    <div class="loginaccount-small-screen">
+      <h1 id="loginizer-small-screen">Login</h1>
+      <h6 id="loginizer-text2-small-screen">Glad you're <span id="loginizer-text2-span-small-screen"><a href="index.html" style="color: skyblue; text-decoration: none;">back...!</a>
+        </span>
+      </h6>
+
+      <br>
+      <form data-bs-theme="dark" action="login.php" method="POST" class="needs-validation " novalidate>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-0 col-form-label "
+            style="color: rgb(255, 255, 255);">Email&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+          </label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control  w-100" id="inputEmail3" placeholder="Email" required>
+            <div class="valid-feedback aimed-feedback">
+              Valid email!
+            </div>
+            <div class="invalid-feedback aimed-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mb-0">
+          <label for="inputPassword5" class="col-sm-0 col-form-label "
+            style="color: rgb(255, 255, 255);">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control ms-auto w-100" id="inputPassword5" placeholder="Password"
+              required>
+
+            <div class="valid-feedback aimed-feedback">
+              Password looks good!
+            </div>
+            <div class="invalid-feedback aimed-feedback">
+              Please enter a password.
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="form-check hello d-flex align-items-center">
+          <input class="form-check-input " type="checkbox" value="" id="checkChecked-hater2" style="z-index: 1;">
+          &NonBreakingSpace;&NonBreakingSpace; <label class="form-check-label" for="checkDefault"
+            style="color: rgb(255, 255, 255); ">
+            Remember me
+          </label>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary w-100 "
+          style="background-color: skyblue; color: black; font-weight: 500;">Sign in</button>
+      </form>
+      <br>
+      <h6 style="color: white;" id="forget-password-small-screen"><a href=""
+          style="text-decoration: none; color: skyblue;">Forget
+          password ?</a></h6>
+      <br>
+      <p id="textor-small-screen" style="color: skyblue; text-align: center; font-size: large; margin-top: -7%;">or</p>
+
+      <div class="signin-icons">
+        <a href="https://gauravkumar13045.github.io/Prestige/">
+          <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google Icon" width="40">
+        </a>
+
+        <a href="https://www.instagram.com">
+          <img src="instagramIcon.png" alt="Instagram Icon" width="45">
+        </a>
+
+        <a href="https://github.com/Gauravkumar13045/Majestic-Shelter">
+          <img src="githubicons.png" alt="Github Icon" width="45">
+        </a>
+      </div>
+      <br>
+      <h6 style="color: white; text-align: center;">Don't have account ? <a href="#"><span style="color: skyblue;" class="backsignUp">Sign Up</span></a></h6>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="customerservices1">
+      <a href="#" style="color: skyblue; text-decoration: none;" class="support-team-login ">Terms & Conditions</a>
+      <a href="#" style="color: skyblue; text-decoration: none;" class="support-team-login">Support</a>
+      <a href="#" style="color: skyblue; text-decoration: none;" class="support-team-login">Customer Care</a>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
