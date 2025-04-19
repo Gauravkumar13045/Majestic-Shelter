@@ -1,0 +1,258 @@
+body {
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+
+
+
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-fluid {
+  width: 10em;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.loginform {
+
+  border-radius: 10px;
+
+}
+
+.container-fluid {
+  position: relative;
+
+
+}
+
+.form-control{
+  position: relative;
+}
+.background-image {
+  margin-left: 4.7%;
+  margin-top: 4%;
+  height: 87vh;
+  border-radius: 15px;
+  filter: brightness(60%);
+  z-index: 1;
+  position: relative;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+
+}
+
+#new-account-text {
+  font-size: 3rem;
+}
+
+#text-start-free {
+  font-size: 5rem;
+}
+
+.form-label {
+  color: rgb(255, 255, 255);
+
+}
+#line-container {
+  height: 100%; /* Full height of the parent container */
+ position: relative;
+ 
+}
+
+#line {
+  position: relative;
+  margin-top: -50vh;
+  margin-left: 50%;
+color: skyblue;
+  
+  margin-bottom: 50vh;
+
+  bottom: -30%;
+  height: 50vh; 
+}
+
+.small-screen {
+  display: none;
+}
+
+#highlight {
+  color: skyblue;
+}
+
+#loginizer{
+  text-align: right;
+  /* font-size: 3vw;  */
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: relative;
+  /* margin-top: -58rem; */
+margin-right: 25%;
+  
+}
+#loginizer-text2{
+  text-align: right;
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-right: 24%;
+  
+}
+#loginizer-text2-span{
+  color: skyblue;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.loginaccount{
+  text-align: right;
+  position: relative;
+  margin-top: -56.5rem;
+  /* border: 2px solid white; */
+  /* margin-left: 25%; */
+
+}
+.readylogin{
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+  position: relative;
+  
+}
+.form-control{
+  text-align: center;
+}
+.label-login{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-left: 35rem;
+}
+.form-label-checker{
+  position: relative;
+  display: flex;
+ right: 32%;
+  align-items: right;
+  justify-content: right;
+}
+.hate{
+  position: relative;
+  display: flex;
+  left: 63.8%;
+  bottom: 5%;
+  align-items: right;
+  justify-content: right;
+  
+}
+#hater{
+  align-items: right;
+  justify-content: right;
+  align-items: right;
+  display: flex;
+}
+.hate2{
+  position: relative;
+  display: flex;
+ right: -64.2%;
+  align-items: right;
+  justify-content: right;
+  
+}
+
+.hatebtn{
+  position: relative;
+  align-items: right;
+  justify-content: right;
+  display: flex;
+  right: 14%;
+}
+#email-id-maker{
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+#forget-password{
+  position: relative;
+  display: flex;
+  right: 22%;
+ 
+  align-items: right;
+  justify-content: right;
+  
+}
+.signin-icons{
+  position: relative;
+  display: flex;
+  right: 21%;
+ gap: 1rem;
+  align-items: right;
+  justify-content: right;
+}
+.support-team-login{
+  position: relative;
+  align-items: right;
+  justify-content: right;
+margin-right: 3%;
+}
+.customerservices{
+  margin-left: 61.5%;
+  margin-top: 1%;
+   align-items: right;
+  justify-content: right;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .small-screen {
+    display: block;
+  }
+
+  .large-screen {
+    display: none;
+  }
+  .realLogin{
+  display: none;
+  }
+  #line {
+    height: 10em; /* Adjust height for tablets and smaller screens */
+  }
+  .loginaccount{
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #line {
+    height: 6em; /* Adjust height for mobile screens */
+  }
+}

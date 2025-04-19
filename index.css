@@ -1,120 +1,133 @@
-body{
-    background-image: url(image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #f0f0f0; 
-    font-family: 'Arial', sans-serif; 
+body {
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
 
 
 }
-.img-fluid{
-    width: 100%;
-    height: auto;
-    
-}
-.contactUs{
-    margin-top: 0.2em;
-    position: relative;
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 
 }
+
+.contactUs {
+  margin-top: 0.2em;
+  position: relative;
+
+}
+
 .contactUs:hover {
-      color: rgb(255, 255, 255); 
-  }
-
-.container-fluid{
-    text-align: right;
-    justify-content: right;
-    align-items: right;
+  color: rgb(255, 255, 255);
 }
+
+.container-fluid {
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+}
+
 #carouselExampleAutoplaying {
-    max-height: 60vh; 
-    overflow: hidden;
-  }
-  
-  #carouselExampleAutoplaying .carousel-item img {
-    object-fit: cover;
-    width: 100%; 
-    height: 50vh; 
+  max-height: 60vh;
+  overflow: hidden;
+}
 
-  }
+#carouselExampleAutoplaying .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
 
-  .carousel-caption h5 {
-    font-size: 2.5rem; 
-    font-weight: bold;
-    color: #f8f9fa; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .carousel-caption p {
-    font-size: 1.5rem; 
-    color: #e0e0e0; 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
-    font-family: 'Lora', serif;
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6); 
-    padding: 20px;
-    border-radius: 10px; 
-    max-width: 70%; 
-    margin: auto;
-  }
+}
 
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-family: 'Playfair Display', serif;
+}
 
+.carousel-caption p {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Lora', serif;
+}
 
-  .pixelated-img {
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-  }
-
-  .navbar-nav {
-    justify-content: flex-start; 
-    display: none;
-  }
-
-  .image-container{
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */ /* Full viewport height */
-  }
-  .img-fluid{
-      width: 10em;
-      height: auto;
-      position: relative;
-      z-index: 1;
-  }
-
-  .loginIcon{
-    position: relative;
-    cursor: pointer;
-    }
-    .loginIcon:hover {
-      color: rgb(255, 255, 255) !important; 
-  }
-
-  .loginIcon2{
-    display: none;
-    position: relative;
-  }
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: auto;
+}
 
 
-#searchInput2{
+
+.pixelated-img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.navbar-nav {
+  justify-content: flex-start;
   display: none;
 }
-#submitBtn2{
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  /* Full viewport height */
+}
+
+.img-fluid {
+  width: 10em;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.loginIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.loginIcon:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.loginIcon2 {
+  display: none;
+  position: relative;
+}
+
+
+#searchInput2 {
   display: none;
 }
-#searchInput3{
+
+#submitBtn2 {
   display: none;
 }
-#submitBtn3{
+
+#searchInput3 {
   display: none;
 }
-.searchBar{
+
+#submitBtn3 {
+  display: none;
+}
+
+.searchBar {
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -127,38 +140,38 @@ body{
 /* Content Styles */
 .content {
   position: relative;
-  z-index: 1; 
-  color: #ffffff; 
+  z-index: 1;
+  color: #ffffff;
 }
 
 .content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-weight: bold; 
- color: #ffffff;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .content p {
-  font-size: 1.5rem; 
-  margin-bottom: 2rem; 
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
-  padding: 1rem 2rem; 
-  background-color: #007bff; 
-  color: #fff; 
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-  font-size: 1.2rem; 
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
 }
 
 .btn:hover {
-  background-color: #0056b3; 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cards{
+.cards {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -167,17 +180,22 @@ body{
   margin-top: 0em;
   border-radius: 15px;
 }
-#flip-card-maker{
-column-gap: 5em;
+
+#flip-card-maker {
+  column-gap: 5em;
 }
 
 
 /* Flip Card Container */
 .flip-card {
-  width: 300px; /* Card width */
-  height: 200px; /* Card height */
-  perspective: 1000px; /* Adds 3D effect */
-  margin: auto ; /* Centers the card */
+  width: 300px;
+  /* Card width */
+  height: 200px;
+  /* Card height */
+  perspective: 1000px;
+  /* Adds 3D effect */
+  margin: auto;
+  /* Centers the card */
 }
 
 /* Inner Wrapper for Flip Animation */
@@ -185,8 +203,10 @@ column-gap: 5em;
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s; /* Smooth flipping effect */
-  transform-style: preserve-3d; /* Ensures both sides are in 3D */
+  transition: transform 0.6s;
+  /* Smooth flipping effect */
+  transform-style: preserve-3d;
+  /* Ensures both sides are in 3D */
 }
 
 /* Front of the Card */
@@ -195,26 +215,32 @@ column-gap: 5em;
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hides the back side during flipping */
-  border-radius: 25px; /* Curved corners for premium feel */
+  backface-visibility: hidden;
+  /* Hides the back side during flipping */
+  border-radius: 25px;
+  /* Curved corners for premium feel */
 }
 
 
 
 /* Back Design */
 .flip-card-back {
-  background-color: #ff8c00; /* Premium orange color */
+  background-color: #ff8c00;
+  /* Premium orange color */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotateY(180deg); /* Flip the back side */
-  border-radius: 25px; /* Consistent curves */
+  transform: rotateY(180deg);
+  /* Flip the back side */
+  border-radius: 25px;
+  /* Consistent curves */
 }
 
 /* Flip Animation on Hover */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); /* Flips the card */
+  transform: rotateY(180deg);
+  /* Flips the card */
 }
 
 
@@ -237,7 +263,8 @@ column-gap: 5em;
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -257,61 +284,46 @@ column-gap: 5em;
 
 
 .video-container {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 50%;
   margin: auto;
   overflow: hidden;
-  cursor: pointer; 
-  position: relative; /* Ensure the video is properly positioned */
-  z-index: 1; /* Lower z-index to place it below the flip cards */
+  cursor: pointer;
+  position: relative;
+  /* Ensure the video is properly positioned */
+  z-index: 1;
+  /* Lower z-index to place it below the flip cards */
 }
+
 video {
-  width: 100%; 
+  width: 100%;
   /* border: 5px solid #ddd; */
   border-radius: 15px;
 }
 
 .flip-card {
-  position: relative; /* Ensure proper stacking context */
-  z-index: 2; /* Higher z-index to place it above the video */
+  position: relative;
+  /* Ensure proper stacking context */
+  z-index: 2;
+  /* Higher z-index to place it above the video */
 }
 
-.length{
+.length {
   position: relative;
   display: grid;
   width: 50vw;
   height: 50%;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
 }
 
 
-.imagecard{
+.imagecard {
   width: 40vh;
   height: 50vh;
   border-radius: 15px;
   position: relative;
-  z-index: 1; 
-  
-}
+  z-index: 1;
 
-.loginform{
-  border: 5px solid #525252;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  margin-top: -50em;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-#inputCity {
-  width: 100%;
-  padding: 10px;
 }
 
 
@@ -329,38 +341,49 @@ video {
 
 
 
-  @media (max-width: 768px) {
-    #carouselExampleAutoplaying .carousel-item img {
-        height: 30vh;
-    }
-    .loginIcon{
-      display: none;
-      position: relative;
-      left: 0.5em;
-    }
-    #searchInput1{
-      display: none;
-    }
-    #submitBtn1{
-      display: none;
-    }
-    #searchInput3{
-      display: none;
-    }
-    #submitBtn3{
-      display: none;
-    }
-    #searchInput2{
-      display: block;
-    }
-    #submitBtn2{
-      display: block;
-    }
-    .loginIcon2{
-      display: flex;
-      position: relative;
-      /* left: 2em; */
-    }
+
+
+
+@media (max-width: 768px) {
+  #carouselExampleAutoplaying .carousel-item img {
+    height: 30vh;
+  }
+
+  .loginIcon {
+    display: none;
+    position: relative;
+    left: 0.5em;
+  }
+
+  #searchInput1 {
+    display: none;
+  }
+
+  #submitBtn1 {
+    display: none;
+  }
+
+  #searchInput3 {
+    display: none;
+  }
+
+  #submitBtn3 {
+    display: none;
+  }
+
+  #searchInput2 {
+    display: block;
+  }
+
+  #submitBtn2 {
+    display: block;
+  }
+
+  .loginIcon2 {
+    display: flex;
+    position: relative;
+    /* left: 2em; */
+  }
 
 }
 
@@ -368,46 +391,57 @@ video {
 
 
 @media (max-width: 600px) {
-    #carouselExampleAutoplaying .carousel-item img {
-        height: 20vh;
-    }
-    .loginIcon{
-      display: none;
-    }
-    /* .loginIcon2{
+  #carouselExampleAutoplaying .carousel-item img {
+    height: 20vh;
+  }
+
+  .loginIcon {
+    display: none;
+  }
+
+  /* .loginIcon2{
       display: flex;
       position: relative;
     } */
-    #searchInput1{
-      display: none;
-    }
-    #submitBtn1{
-      display: none;
-    }
-    #searchInput2{
-      display: none;
-    }
-    #submitBtn2{
-      display: none;
-    }
-    #searchInput3{
-      display: block;
-      position: relative;
-      margin-top: 1.1em;
-    }
-    #submitBtn3{
-      display: block;
-      position: relative;
-      margin-top: 1.1em;
-    }
-    .flip-card {
-      width: 150px; /* Card width */
-      height: 75px; /* Card height */
-      perspective: 1000px; /* Adds 3D effect */
-      margin: auto ; /* Centers the card */
-      display: flex;
+  #searchInput1 {
+    display: none;
+  }
 
-    }
-    
+  #submitBtn1 {
+    display: none;
+  }
+
+  #searchInput2 {
+    display: none;
+  }
+
+  #submitBtn2 {
+    display: none;
+  }
+
+  #searchInput3 {
+    display: block;
+    position: relative;
+    margin-top: 1.1em;
+  }
+
+  #submitBtn3 {
+    display: block;
+    position: relative;
+    margin-top: 1.1em;
+  }
+
+  .flip-card {
+    width: 150px;
+    /* Card width */
+    height: 75px;
+    /* Card height */
+    perspective: 1000px;
+    /* Adds 3D effect */
+    margin: auto;
+    /* Centers the card */
+    display: flex;
+
+  }
+
 }
-
