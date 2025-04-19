@@ -171,18 +171,23 @@ body {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
+
 .cards {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   justify-content: center;
-  margin-top: 0em;
+  align-items: center;
+  margin-top: 1em;
+  /* left: -4%; */
   border-radius: 15px;
+  
 }
 
 #flip-card-maker {
   column-gap: 5em;
+  
 }
 
 
@@ -195,6 +200,7 @@ body {
   perspective: 1000px;
   /* Adds 3D effect */
   margin: auto;
+  
   /* Centers the card */
 }
 
@@ -213,6 +219,7 @@ body {
 .flip-card-front,
 .flip-card-back {
   position: absolute;
+  
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -225,13 +232,14 @@ body {
 
 /* Back Design */
 .flip-card-back {
-  background-color: #ff8c00;
+  background-color: #212529;
   /* Premium orange color */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: rotateY(180deg);
+ 
   /* Flip the back side */
   border-radius: 25px;
   /* Consistent curves */
@@ -240,6 +248,7 @@ body {
 /* Flip Animation on Hover */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+
   /* Flips the card */
 }
 
@@ -248,10 +257,12 @@ body {
 
 .flip-card {
   perspective: 1000px;
+  
 }
 
 .flip-card-inner {
   position: relative;
+  
   width: 100%;
   height: 200px;
   text-align: center;
@@ -266,6 +277,7 @@ body {
 .flip-card-front,
 .flip-card-back {
   position: absolute;
+  
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -277,9 +289,10 @@ body {
 }
 
 .flip-card-back {
-  background-color: #007bff;
+  /* background-color: #ffffff; */
   color: white;
   transform: rotateY(180deg);
+  
 }
 
 
@@ -326,7 +339,25 @@ video {
 
 }
 
-
+.card-img-top {
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 20px; /* Keeps the rounded corners */
+  gap: 1rem;
+  
+  
+}
+.card-img-top:hover {
+box-shadow: skyblue 0px 0px 100px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.card-title{
+  color: skyblue;
+   font-weight: bolder;
+}
+.flipBtnGate{
+  background-color: skyblue;
+}
 
 
 
@@ -433,15 +464,14 @@ video {
 
   .flip-card {
     width: 150px;
-    /* Card width */
-    height: 75px;
-    /* Card height */
+    margin-left: 1rem;
+  z-index: 2;
     perspective: 1000px;
-    /* Adds 3D effect */
-    margin: auto;
-    /* Centers the card */
+/* position: relative; */
+    /* margin: auto; */
     display: flex;
 
   }
+
 
 }

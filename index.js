@@ -1,12 +1,17 @@
 
 const video = document.getElementById('hoverVideo');
 
-video.addEventListener('mouseover', () => {
-  video.play(); // Play video on hover
+document.querySelector("video").addEventListener("mouseover", () => {
+  let video = document.querySelector("video");
+  video.play();
 });
 
-video.addEventListener('mouseout', () => {
-  video.pause(); // Pause video when hover stops
+document.querySelector("video").addEventListener("mouseleave", () => {
+  let video = document.querySelector("video");
+  video.pause();
 });
+
+
+
 
 
