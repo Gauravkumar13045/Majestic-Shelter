@@ -9,6 +9,13 @@ body {
 
 
 }
+body::selection{
+  background-color: rgb(109, 196, 230);
+}
+.nav-item:hover{
+border: 1px solid white;
+border-radius: 5px;
+}
 
 .img-fluid {
   width: 100%;
@@ -359,12 +366,91 @@ box-shadow: skyblue 0px 0px 100px 20px;
   background-color: skyblue;
 }
 
+  .saleLogo {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+   
+  }
 
 
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+h2 {
+  /* font-size: 3rem; */
+  font-weight: bold;
+}
 
+h1 {
+  font-weight: bold;
+  z-index: 1;
 
+}
+.timer{
+  position: relative;
+  /* bottom: 23rem; */
+  z-index: 1;
+  right: 50%;
+  width: 60rem;
 
+}
+#saleBtn{
+color: white;
+width: 20rem;
+height: 3rem;
+border-radius: 5px;
+background: rgba(255, 18, 18, 0.77);
+border: none;
+}
+#saleBtn:hover{
+  background: rgba(255, 18, 18, 0.51);
+  color: white;
+  cursor: pointer;
+}
+.sale-container h1{
+  text-align: center;
+  width: 100%;
+}
+.whyChoose{
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: bolder;
+  font-size: 5rem;  
+
+}
+.box-explain{
+  position: relative;
+  border: 1px double rgb(244, 244, 244);
+  background-color: #141517;
+  color: black;
+  border-radius: 5px;
+  height: 10rem;
+  gap: 5%;
+  overflow: scroll;
+}
+.box-explain:hover{
+  box-shadow: rgb(255, 255, 255) 0px 0px 25px 0px;
+}
+.box-explain::-webkit-scrollbar {
+  display: none;
+}
+
+.box-explain h3{
+  color: skyblue;
+  font-weight: bold;
+}
+.box-explain h5{
+  color: rgb(255, 255, 255);
+}
+.box-explain-head{
+  border-radius: 10px;
+  
+}
 
 
 
@@ -415,6 +501,19 @@ box-shadow: skyblue 0px 0px 100px 20px;
     position: relative;
     /* left: 2em; */
   }
+  .card {
+    display: none;
+  }
+ .homeAbout h4{
+    font-size: 1.1rem;
+    text-align: justify;
+ }
+ .box-explain{
+  justify-content: center;
+  right: 3.9rem;
+  
+ }
+
 
 }
 
@@ -472,6 +571,13 @@ box-shadow: skyblue 0px 0px 100px 20px;
     display: flex;
 
   }
-
+.homeAbout box-explain{
+  width: 10rem;
+  height: 100%;
+  display: none;
+}
+.overlay{
+  height: 500%;
+}
 
 }

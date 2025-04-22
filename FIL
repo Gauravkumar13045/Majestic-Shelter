@@ -1,0 +1,50 @@
+ <div class="container mt-5 timer">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="text-primary text-danger fw-bold">Special Discount Ends In</h1>
+        <div class="row justify-content-center mt-3">
+          <!-- Days -->
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="card text-center p-3" style="background-color: white; ">
+              <div class="card-body">
+                <h2 id="days" class="text-danger">00</h2>
+                <p class="text-secondary">Days</p>
+              </div>
+            </div>
+          </div>
+          <!-- Hours -->
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="card text-center p-3" style="background-color: white;">
+              <div class="card-body">
+                <h2 id="hours" class="text-danger">00</h2>
+                <p class="text-secondary">Hours</p>
+              </div>
+            </div>
+          </div>
+          <!-- Minutes -->
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="card text-center p-3" style="background-color: white;">
+              <div class="card-body">
+                <h2 id="minutes" class="text-danger">00</h2>
+                <p class="text-secondary">Min</p>
+              </div>
+            </div>
+          </div>
+          <!-- Seconds -->
+          <div class="col-6 col-sm-3 col-md-2">
+            <div class="card text-center p-3" style="background-color: white;">
+              <div class="card-body">
+                <h2 id="seconds" class="text-danger">00</h2>
+                <p class="text-secondary">Sec</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+      <button type="button" class="btn btn-primary px-5 py-2" id="saleBtn"><b>ABOUT THE OFFER</b></button>
+    </div>
+  </div>
+
