@@ -9,12 +9,14 @@ body {
 
 
 }
-body::selection{
+
+body::selection {
   background-color: rgb(109, 196, 230);
 }
-.nav-item:hover{
-border: 1px solid white;
-border-radius: 5px;
+
+.nav-item:hover {
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .img-fluid {
@@ -96,7 +98,7 @@ border-radius: 5px;
   /* Full viewport height */
 }
 
-.img-fluid {
+#logo {
   width: 10em;
   height: auto;
   position: relative;
@@ -189,12 +191,12 @@ border-radius: 5px;
   margin-top: 1em;
   /* left: -4%; */
   border-radius: 15px;
-  
+
 }
 
 #flip-card-maker {
   column-gap: 5em;
-  
+
 }
 
 
@@ -207,7 +209,7 @@ border-radius: 5px;
   perspective: 1000px;
   /* Adds 3D effect */
   margin: auto;
-  
+
   /* Centers the card */
 }
 
@@ -226,7 +228,7 @@ border-radius: 5px;
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  
+
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -246,7 +248,7 @@ border-radius: 5px;
   align-items: center;
   justify-content: center;
   transform: rotateY(180deg);
- 
+
   /* Flip the back side */
   border-radius: 25px;
   /* Consistent curves */
@@ -264,12 +266,12 @@ border-radius: 5px;
 
 .flip-card {
   perspective: 1000px;
-  
+
 }
 
 .flip-card-inner {
   position: relative;
-  
+
   width: 100%;
   height: 200px;
   text-align: center;
@@ -284,7 +286,7 @@ border-radius: 5px;
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  
+
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -299,7 +301,7 @@ border-radius: 5px;
   /* background-color: #ffffff; */
   color: white;
   transform: rotateY(180deg);
-  
+
 }
 
 
@@ -347,31 +349,40 @@ video {
 }
 
 .card-img-top {
-  height: 200px; /* Fixed height for all images */
-  object-fit: cover; /* Ensures the image fills the container without distortion */
-  border-radius: 20px; /* Keeps the rounded corners */
+  height: 200px;
+  /* Fixed height for all images */
+  object-fit: cover;
+  /* Ensures the image fills the container without distortion */
+  border-radius: 20px;
+  /* Keeps the rounded corners */
   gap: 1rem;
-  
-  
+
+
 }
+
 .card-img-top:hover {
-box-shadow: skyblue 0px 0px 100px 20px;
+  box-shadow: skyblue 0px 0px 100px 20px;
   transition: all 0.3s ease-in-out;
 }
-.card-title{
+
+.card-title {
   color: skyblue;
-   font-weight: bolder;
+  font-weight: bolder;
 }
-.flipBtnGate{
+
+.flipBtnGate {
   background-color: skyblue;
 }
 
-  .saleLogo {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image fills the container without distortion */
-   
-  }
+.saleLogo {
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Ensure the image fills the container without distortion */
+
+}
 
 
 .card {
@@ -389,7 +400,8 @@ h1 {
   z-index: 1;
 
 }
-.timer{
+
+.timer {
   position: relative;
   /* bottom: 23rem; */
   z-index: 1;
@@ -397,33 +409,38 @@ h1 {
   width: 60rem;
 
 }
-#saleBtn{
-color: white;
-width: 20rem;
-height: 3rem;
-border-radius: 5px;
-background: rgba(255, 18, 18, 0.77);
-border: none;
+
+#saleBtn {
+  color: white;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 5px;
+  background: rgba(255, 18, 18, 0.77);
+  border: none;
 }
-#saleBtn:hover{
+
+#saleBtn:hover {
   background: rgba(255, 18, 18, 0.51);
   color: white;
   cursor: pointer;
 }
-.sale-container h1{
+
+.sale-container h1 {
   text-align: center;
   width: 100%;
 }
-.whyChoose{
+
+.whyChoose {
   text-align: center;
   position: relative;
   z-index: 2;
   color: white;
   font-weight: bolder;
-  font-size: 5rem;  
+  font-size: 5rem;
 
 }
-.box-explain{
+
+.box-explain {
   position: relative;
   border: 1px double rgb(244, 244, 244);
   background-color: #141517;
@@ -433,27 +450,158 @@ border: none;
   gap: 5%;
   overflow: scroll;
 }
-.box-explain:hover{
+
+.box-explain:hover {
   box-shadow: rgb(255, 255, 255) 0px 0px 25px 0px;
 }
+
 .box-explain::-webkit-scrollbar {
   display: none;
 }
 
-.box-explain h3{
+.box-explain h3 {
   color: skyblue;
   font-weight: bold;
 }
-.box-explain h5{
+
+.box-explain h5 {
   color: rgb(255, 255, 255);
 }
-.box-explain-head{
+
+.box-explain-head {
   border-radius: 10px;
-  
+
+}
+
+.quantityConsumer {
+  position: relative;
+  text-align: left;
+  display: inline-flex;
+  gap: 30%;
+  font-weight: bold;
+
+}
+
+.quantityConsumer2 {
+  position: relative;
+  text-align: left;
+  right: 2rem;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-size: 1.2vw;
+  gap: 10%;
+  font-weight: bold;
+  white-space: nowrap;
+
+}
+
+#diluted-border {
+  width: 60%;
+  text-align: left;
+  justify-content: left;
+  align-items: start;
+
+
+  /* clip-path: inset(0 1% 0 0); */
+  border-radius: 10px;
+}
+
+
+#diluted-border3 {
+  display: none;
+}
+
+.achievementID {
+  position: relative;
+  overflow: hidden;
+  /* Ensures no overflow during animation */
 }
 
 
 
+#diluted-border2 {
+  margin-bottom: 30rem;
+  margin-left: 15rem;
+  font-weight: bold;
+  position: relative;
+  /* font-size: 1.5vw; */
+}
+
+/* #diluted-texter{
+text-align: justify;
+width: 35rem;
+position: relative;
+font-size: 1vw;
+margin-right: 10%;
+} */
+
+#diluted-texter {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: medium;
+
+}
+
+#diluted-texter2 {
+  display: none;
+}
+
+.achieveIt {
+  position: relative;
+}
+
+#awardText {
+  display: none;
+}
+
+.awardedText2 {
+  display: none;
+}
+
+#achievementPic2 {
+  display: none;
+}
+
+#AssistanceBtn1 {
+  background: linear-gradient(to right, rgb(90, 200, 245), rgb(191, 90, 242), rgb(255, 55, 95));
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+#AssistanceBtn1:hover {
+  background: linear-gradient(to right, rgb(255, 55, 95), rgb(191, 90, 242), rgb(90, 200, 245));
+  font-weight: bold;
+  transform: scale(1.06);
+}
+
+#AssistanceText2 {
+  display: none;
+
+}
+#AssistanceBtn2{
+  /* background: linear-gradient(to left, rgb(90, 200, 245), rgb(191, 90, 242), rgb(255, 55, 95)); */
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#AssistanceBtn2:hover {
+
+
+  transform: scale(1.06);
+}
 
 
 
@@ -501,21 +649,129 @@ border: none;
     position: relative;
     /* left: 2em; */
   }
+
   .card {
     display: none;
   }
- .homeAbout h4{
+
+  .homeAbout h4 {
     font-size: 1.1rem;
     text-align: justify;
- }
- .box-explain{
-  justify-content: center;
-  right: 3.9rem;
-  
- }
+  }
+
+  .box-explain {
+    justify-content: center;
+    right: 3.9rem;
+
+  }
+
+  .flip-card {
+    right: 3rem;
+  }
+
+  .quantityConsumer {
+    right: 0rem;
+    text-align: center;
+    justify-content: center;
+    /* Centers the entire block horizontally */
+    align-items: center;
+    /* Centers content vertically */
+
+
+  }
+
+  .quantityConsumer2 {
+    position: relative;
+    text-align: center;
+    right: 0em;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    font-size: 3vw;
+    gap: 10%;
+    font-weight: bold;
+    margin: 0px;
+
+
+
+
+  }
+
+  .achievementID {
+    position: relative;
+    overflow: hidden;
+    /* Ensures no overflow during animation */
+  }
+
+  #director {
+    text-align: center;
+    margin: 0rem;
+    /* display: none; */
+  }
+
+  #awardText {
+    display: none;
+  }
+
+  #awardText1 {
+    display: block;
+  }
+
+  #AssistanceText1 {
+    display: none;
+  }
+
+  #AssistanceText2 {
+    display: block;
+    font-weight: 800;
+  }
+
+  #assistanceImg {
+    margin-top: 8px;
+  }
+
+  #AssistanceBtn1 {
+    margin-bottom: 0rem;
+  }
+
+
 
 
 }
+
+
+
+
+
+@media (max-width: 991px) {
+  #achievementPic {
+    width: 100%;
+    display: block;
+  }
+
+  #awardedText {
+    overflow-wrap: break-word;
+
+  }
+
+  .awardedText {
+    display: none;
+  }
+
+  .awardedText2 {
+    display: block;
+  }
+
+  #awardText3 {
+    display: block;
+  }
+
+  #awardText4 {
+    display: none;
+  }
+}
+
+
 
 
 
@@ -563,21 +819,74 @@ border: none;
 
   .flip-card {
     width: 150px;
-    margin-left: 1rem;
-  z-index: 2;
+
+    left: 0rem;
+    z-index: 2;
     perspective: 1000px;
-/* position: relative; */
+    /* position: relative; */
     /* margin: auto; */
     display: flex;
 
   }
-.homeAbout box-explain{
-  width: 10rem;
-  height: 100%;
-  display: none;
-}
-.overlay{
-  height: 500%;
-}
+
+  .homeAbout box-explain {
+    width: 10rem;
+    height: 100%;
+    display: none;
+  }
+
+  .overlay {
+    height: 500%;
+  }
+
+  /* .quantityConsumer{
+  font-size: 5vw;
+  position: relative;
+} */
+  #diluted-border {
+    display: flex;
+    flex-wrap: wrap;
+    /* right: 3rem; */
+    width: 100%;
+    margin-left: none;
+    /* margin-right: 5.9rem; */
+    text-align: center;
+    opacity: 1;
+    /* Visible directly */
+    transform: none;
+    /* No movement */
+    transition: none;
+    /* No animation */
+
+  }
+
+  #diluted-border2 {
+    white-space: nowrap;
+    display: none;
+  }
+
+  #diluted-border3 {
+    display: block;
+    font-weight: bold;
+
+  }
+
+  #diluted-border.in-view {
+    display: none;
+  }
+
+  #diluted-texter2 {
+    display: block;
+  }
+
+  #diluted-texter2 {
+    display: none;
+  }
+
+  #director {
+    text-align: center;
+    margin: 0rem;
+    /* display: none; */
+  }
 
 }
