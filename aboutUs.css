@@ -1,0 +1,50 @@
+body {
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+  
+  
+  }
+  body::selection {
+    background-color: rgb(109, 196, 230);
+  }
+  
+  .nav-item:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  
+  }
+  #logo {
+    width: 10em;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .container-fluid {
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+  }
+  #searchInput2 {
+    display: none;
+  }
+  
+  #submitBtn2 {
+    display: none;
+  }
+  
+  #searchInput3 {
+    display: none;
+  }
+  
+  #submitBtn3 {
+    display: none;
+  }

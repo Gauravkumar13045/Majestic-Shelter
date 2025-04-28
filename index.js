@@ -90,14 +90,22 @@ window.addEventListener("scroll", () => {
     animateCount("project2", 0, 1420, 1100);
     animateCount("employee", 0, 100, 3000,);
     animateCount("employee2", 0, 3000, 1100);
-    
+
     // Set the flag to true so animation doesn't trigger again
     hasAnimated = true;
   }
 });
 
 
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
 
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
 
 
 

@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/9ad8bac78a.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="logobg.pngs" type="image/x-icon">
+  <link rel="icon" href="logobg.png" type="image/x-icon" sizes="32x32">
 
 
 </head>
@@ -17,7 +17,7 @@
 <body>
 
   <div class="image-container">
-    <img src="logobg.png" class="img-fluid" alt="logo" id="logo">
+    <a href="index.html"><img src="logobg.png" class="img-fluid" alt="logo" id="logo"></a>
   </div>
 
 
@@ -60,10 +60,10 @@
       <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="aboutUs.html">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Store</a>
@@ -157,13 +157,31 @@
   <div class="hero-section text-center"
     style="background-image: url('roof-background.jpg'); background-size: cover; background-position: center; height: 100vh;">
     <div class="overlay"
-      style="background-color: rgba(0, 0, 0, 0.5); height: 800%; width: 100%; position: absolute;opacity: 0.5;">
+      style="background-color: rgba(0, 0, 0, 0.5); height: 506.5%; width: 100%; position: absolute;opacity: 0.5;">
     </div>
     <div class="content position-relative text-white ">
       <br>
       <h1 class="display-4">Durable Roofing Solutions</h1>
       <p class="lead">Strong, stylish, and built to last.</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <!-- <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a> -->
+
+
+      <button type="button" class="btn btn-primary btn-lg" id="liveToastBtn">Get a Free Quote</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3" data-bs-theme="dark">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="logobg.png" class="rounded me-2" alt="..." width="30px" height="30px">
+            <strong class="me-auto">Majestic Shelter</strong>
+            <small>Just now...</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            <b><span style="color: skyblue; font-weight: bold;">Congratulations !</span> &NonBreakingSpace;We've
+              received your request for a personalized quote.</b>
+          </div>
+        </div>
+      </div>
 
 
       <br>
@@ -338,74 +356,6 @@
 
     <br>
 
-
-    <div class="image-container sale-container">
-      <!-- <img src="sale.png" class="img-fluid saleLogo" alt="sale" > -->
-
-      <!-- <div class="container mt-5 timer">
-    <div class="row">
-      
-      <div class="col ">
-        <div class="row justify-content-center mt-3">
-
-
-
-
-          <div class="col-6 col-sm-3 col-md-5">
-            <div class="card text-center p-3" style="background-color: white; ">
-              <div class="card-body">
-                <h2 id="days" class="text-danger">00</h2>
-                <p class="text-secondary">Days</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-6 col-sm-3 col-md-5">
-            <div class="card text-center p-3" style="background-color: white;">
-              <div class="card-body">
-                <h2 id="hours" class="text-danger">00</h2>
-                <p class="text-secondary">Hours</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-6 col-sm-3 col-md-5">
-            <div class="card text-center p-3" style="background-color: white;">
-              <div class="card-body">
-                <h2 id="minutes" class="text-danger">00</h2>
-                <p class="text-secondary">Min</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-6 col-sm-3 col-md-5">
-            <div class="card text-center p-3" style="background-color: white;">
-              <div class="card-body">
-                <h2 id="seconds" class="text-danger">00</h2>
-                <p class="text-secondary">Sec</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-center mt-4">
-      <button type="button" class="btn btn-primary px-5 py-2" id="saleBtn"><b>ABOUT THE OFFER</b></button>
-    </div>
-  </div>
-</div> -->
-    </div>
-
     <br>
     <br>
     <div class="homeAbout" style="height: 50%;">
@@ -502,32 +452,6 @@
         <br>
         <br>
 
-        <!-- <div class="achiveIt">
-          <p id="diluted-border3">Awards & Achievements</p>
-          <h1 id="diluted-border2" style="margin: 0rem;">Awards & Achievements</h1>
-          <br>
-
-          <div class="image-container" id="achievementID">
-
-            <img src="achievement.jpg" class="img-fluid " alt="logo" style="filter: brightness(85%);z-index: 2; "
-              id="diluted-border">
-
-            <h6 id="diluted-texter2"><span style="font-size: 28px;">“</span>Our journey is defined by trust, commitment,
-              and
-              unmatched craftsmanship.Over the years, we have received numerous accolades for our roofing solutions,
-              serving
-              both residential and commercial needs with excellence.These achievements reflect our unwavering dedication
-              to
-              quality, innovation, and customer satisfaction.<span style="font-size: 28px;">”</span></h6>
-          </div>
-          <br>
-          <hp id="diluted-texter1"><span style="text-align: center;">“</span>Our journey is defined by trust,
-            commitment,
-            and unmatched craftsmanship.Over the years, we have received numerous accolades for our roofing solutions,
-            serving both residential and commercial needs with excellence.These achievements reflect our unwavering
-            dedication to quality, innovation, and customer satisfaction.<span>”</span></p>
-        </div> -->
-
 
 
 
@@ -613,14 +537,16 @@
 
               <!-- Buttons -->
               <div class="mt-4">
-                <a href="login.html"><button class="btn btn-primary px-4 py-2 me-3 " id="AssistanceBtn1">Schedule Your Consultation</button></a>
-                <a href="tel: +919204096990"><button class="btn btn-outline-secondary px-4 py-2" id="AssistanceBtn2">Contact Us Today</button></a>
+                <a href="login.html"><button class="btn btn-primary px-4 py-2 me-3 " id="AssistanceBtn1">Schedule Your
+                    Consultation</button></a>
+                <a href="tel: +919204096990"><button class="btn btn-outline-secondary px-4 py-2"
+                    id="AssistanceBtn2">Contact Us Today</button></a>
               </div>
             </div>
             <br>
             <!-- Image Column -->
             <div class="col-12 col-md-6 text-center text-md-start">
-              <img src="Assitance.jpg" class="img-fluid " alt="Assistance"  style="border-radius: 10px;"
+              <img src="Assitance.jpg" class="img-fluid " alt="Assistance" style="border-radius: 10px;"
                 id="assistanceImg">
             </div>
 
@@ -628,7 +554,122 @@
         </div>
 
 
+        <div class="overlay2"
+          style="background-color: rgba(0, 0, 0, 0.5); height: 22%; width: 100%; position: absolute; opacity: 0.9;">
 
+
+
+          <footer class="footer text-white pt-5 pb-4 text-center">
+            <div class="container">
+              <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-11 d-flex flex-row justify-content-between text-center "  >
+                  <div class="contactInfo">
+                    <h4>Find Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Patna, Bihar-800001</p>
+                  </div>
+                  <div class="contactInfo">
+                    <h4>Call Us</h4>
+                    <p><i class="fas fa-phone"></i> 99999-55555</p>
+                  </div>
+                  <div class="contactInfo">
+                    <h4>Mail Us</h4>
+                    <p><i class="fas fa-envelope"></i> mail@info.com</p>
+                  </div>
+                </div>
+                <br>
+                <!-- <hr class="bg-light"> -->
+
+                <!-- About Section -->
+                <div class="col-md-3 mt-3">
+                  <h4>About Us</h4>
+                  <p>We provide high-quality roofing solutions designed for durability and style.</p>
+                  <h4>Follow Us</h4>
+                  <div class="social-icons">
+                    <a href="https://github.com/Gauravkumar13045/Majestic-Shelter" style="text-decoration: none;">
+                      <img src="facebook.png" alt="Github Icon" width="45">
+                    </a>
+
+                    <a href="https://github.com/Gauravkumar13045/Majestic-Shelter" style="text-decoration: none;">
+                      <img src="twitter2.png" alt="Github Icon" width="45">
+                    </a>
+
+                    <a href="https://github.com/Gauravkumar13045/Majestic-Shelter" style="text-decoration: none;">
+                      <img src="instaji.png" alt="Github Icon" width="45">
+                    </a>
+
+
+
+                  </div>
+                </div>
+
+                <!-- Useful Links & Subscription -->
+                <div class="col-md-8 mt-3 d-flex flex-row justify-content-between">
+                  <!-- Useful Links -->
+                  <div class="col-md-9">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled col-md-12 ">
+                      <li><a href="#" class="text-white text-decoration-none" style="margin-bottom: 1rem;">Home</a></li>
+                      <li><a href="#" class="text-white text-decoration-none" style="margin-bottom: 1rem;">Services</a>
+                      </li>
+                      <li><a href="#" class="text-white text-decoration-none" style="margin-bottom: 1rem;">Contact</a>
+                      </li>
+                      <li><a href="#" class="text-white text-decoration-none" style="margin-bottom: 1rem;">About Us</a>
+                      </li>
+                      <li><a href="#" class="text-white text-decoration-none" style="margin-bottom: 1rem;">Latest
+                          News</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Subscribe -->
+                  <div class="ms-5">
+                    <h4>Subscribe</h4>
+                    <p>Stay updated with our latest offers.</p>
+                    <div class="input-group">
+                      <input type="email" class="form-control" placeholder="Email Address">
+                      <button class="btn btn-warning"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="bg-light">
+              <div class="row text-center">
+                <p>&copy; 2025 Majestic Shelter | All Rights Reserved</p>
+
+                <div class="col-md-10 d-flex flex-row justify-content-between text-center">
+                  <div class="copyright" style="margin-top: -2rem;">
+                    <a href="index.html" class="copyright1">Home</a>
+                    <a href="#" class="copyright1">Terms</a>
+                    <a href="#" class="copyright1">Privacy</a>
+                    <a href="#" class="copyright1">Policy</a>
+                    <a href="#" class="copyright1">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 
 
 
@@ -640,7 +681,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4WQkC+hVqc2pM8ODewa9r"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4WQkG8rC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
     integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"

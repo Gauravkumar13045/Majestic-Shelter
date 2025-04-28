@@ -92,10 +92,7 @@ body::selection {
 .image-container {
   display: flex;
   justify-content: center;
-  /* Centers horizontally */
   align-items: center;
-  /* Centers vertically */
-  /* Full viewport height */
 }
 
 #logo {
@@ -142,11 +139,6 @@ body::selection {
   align-items: flex-start;
 }
 
-
-
-
-
-/* Content Styles */
 .content {
   position: relative;
   z-index: 1;
@@ -242,7 +234,6 @@ body::selection {
 /* Back Design */
 .flip-card-back {
   background-color: #212529;
-  /* Premium orange color */
   color: #fff;
   display: flex;
   align-items: center;
@@ -251,7 +242,6 @@ body::selection {
 
   /* Flip the back side */
   border-radius: 25px;
-  /* Consistent curves */
 }
 
 /* Flip Animation on Hover */
@@ -298,7 +288,6 @@ body::selection {
 }
 
 .flip-card-back {
-  /* background-color: #ffffff; */
   color: white;
   transform: rotateY(180deg);
 
@@ -312,22 +301,17 @@ body::selection {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  /* Ensure the video is properly positioned */
   z-index: 1;
-  /* Lower z-index to place it below the flip cards */
 }
 
 video {
   width: 100%;
-  /* border: 5px solid #ddd; */
   border-radius: 15px;
 }
 
 .flip-card {
   position: relative;
-  /* Ensure proper stacking context */
   z-index: 2;
-  /* Higher z-index to place it above the video */
 }
 
 .length {
@@ -350,11 +334,8 @@ video {
 
 .card-img-top {
   height: 200px;
-  /* Fixed height for all images */
   object-fit: cover;
-  /* Ensures the image fills the container without distortion */
   border-radius: 20px;
-  /* Keeps the rounded corners */
   gap: 1rem;
 
 
@@ -376,12 +357,8 @@ video {
 
 .saleLogo {
   width: 100%;
-  /* Full width */
   height: auto;
-  /* Maintain aspect ratio */
   object-fit: cover;
-  /* Ensure the image fills the container without distortion */
-
 }
 
 
@@ -391,7 +368,6 @@ video {
 }
 
 h2 {
-  /* font-size: 3rem; */
   font-weight: bold;
 }
 
@@ -403,7 +379,6 @@ h1 {
 
 .timer {
   position: relative;
-  /* bottom: 23rem; */
   z-index: 1;
   right: 50%;
   width: 60rem;
@@ -500,9 +475,6 @@ h1 {
   text-align: left;
   justify-content: left;
   align-items: start;
-
-
-  /* clip-path: inset(0 1% 0 0); */
   border-radius: 10px;
 }
 
@@ -514,7 +486,6 @@ h1 {
 .achievementID {
   position: relative;
   overflow: hidden;
-  /* Ensures no overflow during animation */
 }
 
 
@@ -524,16 +495,9 @@ h1 {
   margin-left: 15rem;
   font-weight: bold;
   position: relative;
-  /* font-size: 1.5vw; */
 }
 
-/* #diluted-texter{
-text-align: justify;
-width: 35rem;
-position: relative;
-font-size: 1vw;
-margin-right: 10%;
-} */
+
 
 #diluted-texter {
   color: rgb(255, 255, 255);
@@ -585,8 +549,8 @@ margin-right: 10%;
   display: none;
 
 }
-#AssistanceBtn2{
-  /* background: linear-gradient(to left, rgb(90, 200, 245), rgb(191, 90, 242), rgb(255, 55, 95)); */
+
+#AssistanceBtn2 {
   background-color: rgb(255, 255, 255);
   color: black;
   border: none;
@@ -597,15 +561,42 @@ margin-right: 10%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 #AssistanceBtn2:hover {
 
 
   transform: scale(1.06);
 }
 
+.footer {
+  font-size: 16px;
+}
 
+.footer h4 {
+  color: skyblue;
+  font-weight: bold;
+}
 
+.social-icons a {
+  font-size: 20px;
+  transition: 0.3s;
+}
 
+.social-icons a:hover {
+  color: skyblue;
+}
+
+.input-group button {
+  border-radius: 0;
+}
+.copyright1{
+  text-decoration: none;
+  color: grey;
+  margin-left: 1rem;
+}
+.contactInfo{
+ margin-left: 3rem;
+}
 
 
 
@@ -647,7 +638,6 @@ margin-right: 10%;
   .loginIcon2 {
     display: flex;
     position: relative;
-    /* left: 2em; */
   }
 
   .card {
@@ -673,9 +663,7 @@ margin-right: 10%;
     right: 0rem;
     text-align: center;
     justify-content: center;
-    /* Centers the entire block horizontally */
     align-items: center;
-    /* Centers content vertically */
 
 
   }
@@ -684,9 +672,7 @@ margin-right: 10%;
     position: relative;
     text-align: center;
     right: 0em;
-    /* display: flex; */
     flex-wrap: wrap;
-    /* flex-wrap: nowrap; */
     font-size: 3vw;
     gap: 10%;
     font-weight: bold;
@@ -700,13 +686,11 @@ margin-right: 10%;
   .achievementID {
     position: relative;
     overflow: hidden;
-    /* Ensures no overflow during animation */
   }
 
   #director {
     text-align: center;
     margin: 0rem;
-    /* display: none; */
   }
 
   #awardText {
@@ -732,6 +716,9 @@ margin-right: 10%;
 
   #AssistanceBtn1 {
     margin-bottom: 0rem;
+  }
+  .copyright{
+    margin-top: 0rem;
   }
 
 
@@ -785,10 +772,7 @@ margin-right: 10%;
     display: none;
   }
 
-  /* .loginIcon2{
-      display: flex;
-      position: relative;
-    } */
+
   #searchInput1 {
     display: none;
   }
@@ -823,8 +807,6 @@ margin-right: 10%;
     left: 0rem;
     z-index: 2;
     perspective: 1000px;
-    /* position: relative; */
-    /* margin: auto; */
     display: flex;
 
   }
@@ -839,24 +821,15 @@ margin-right: 10%;
     height: 500%;
   }
 
-  /* .quantityConsumer{
-  font-size: 5vw;
-  position: relative;
-} */
   #diluted-border {
     display: flex;
     flex-wrap: wrap;
-    /* right: 3rem; */
     width: 100%;
     margin-left: none;
-    /* margin-right: 5.9rem; */
     text-align: center;
     opacity: 1;
-    /* Visible directly */
     transform: none;
-    /* No movement */
     transition: none;
-    /* No animation */
 
   }
 
@@ -886,7 +859,6 @@ margin-right: 10%;
   #director {
     text-align: center;
     margin: 0rem;
-    /* display: none; */
   }
 
 }
