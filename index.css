@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0;  
   font-family: 'Arial', sans-serif;
 
 
@@ -596,6 +596,16 @@ h1 {
 }
 .contactInfo{
  margin-left: 3rem;
+}
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animation.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
