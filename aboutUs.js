@@ -8,3 +8,17 @@ document.addEventListener("scroll", function () {
         }
     });
 });
+
+
+AOS.init({ duration: 1000 });
+
+// Reveal elements smoothly on scroll
+document.addEventListener("scroll", function () {
+    document.querySelectorAll(".event").forEach(event => {
+        let rect = event.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) {
+            event.classList.add("visible");
+        }
+    });
+});
+
