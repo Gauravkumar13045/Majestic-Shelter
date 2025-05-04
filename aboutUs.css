@@ -299,8 +299,40 @@ body::selection {
 .event-circle:hover {
     box-shadow: 0px 0px 15px skyblue;
 }
+.purpose{
+  height: 20rem;
+  background-color: transparent;
+  color: #f0f0f0;
+}
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
 
+.footer-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
 
+.footer-link:hover {
+  color: #FFD700;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #FFD700;
+}
+.head1{
+  color: skyblue;
+}
 
 
 
@@ -362,8 +394,18 @@ body::selection {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
 
   }
-
-  
+.Subscription{
+  display: none;
+}
+.footer{
+  color: black;
+}
+.test1{
+ display: none;
+}
+.test2{
+  display: block !important;
+ }
 }
 
 
@@ -432,7 +474,22 @@ body::selection {
     z-index: -1;
   }
 
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: skyblue;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    animation: grow-line 2s ease-in-out forwards;
+}
 
+@keyframes grow-line {
+    from { height: 0; }
+    to { height: 95%; }
+}
 
 
 

@@ -607,6 +607,35 @@ h1 {
   opacity: 1;
   transform: translateY(0);
 }
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #FFD700;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #FFD700;
+}
+.head1{
+  color: skyblue;
+}
 
 
 
@@ -730,7 +759,18 @@ h1 {
   .copyright{
     margin-top: 0rem;
   }
-
+  .footer{
+    color: black;
+  }
+  .test1{
+   display: none;
+  }
+  .test2{
+    display: block !important;
+   }
+   .Subscription1{
+    display: none;
+  }
 
 
 
