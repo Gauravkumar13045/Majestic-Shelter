@@ -399,6 +399,9 @@ display: none;
     font-size: 7vw !important;
 
   }
+  .bestSeller-header{
+    display: none !important;
+  }
 
 }
 

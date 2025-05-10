@@ -101,15 +101,21 @@ itemList2.forEach(item => {
 
 let gridIcon = document.getElementById("gridIcon");
 let listIcon = document.getElementById("listIcon");
+let controler = document.querySelectorAll('.controler');
 
 gridIcon.addEventListener("click", () => {
   listIcon.style.display="block";
   gridIcon.style.display="none";
+  controler.style.display = "inline-block";
 
 })
 
 listIcon.addEventListener("click", () => {
   listIcon.style.display="none";
   gridIcon.style.display="block";
+  controler.style.display = "flex";
 
 })
+
+
+
