@@ -88,3 +88,28 @@ itemList.forEach(item => {
     dropdownBtn.textContent = this.textContent
   });
 });
+
+let dropdownBtn2 = document.querySelector('.dropdownBtn2');
+let itemList2 = document.querySelectorAll('.itemList2');
+
+itemList2.forEach(item => {
+  item.addEventListener('click', function (){
+
+    dropdownBtn2.textContent = this.textContent
+  });
+});
+
+let gridIcon = document.getElementById("gridIcon");
+let listIcon = document.getElementById("listIcon");
+
+gridIcon.addEventListener("click", () => {
+  listIcon.style.display="block";
+  gridIcon.style.display="none";
+
+})
+
+listIcon.addEventListener("click", () => {
+  listIcon.style.display="none";
+  gridIcon.style.display="block";
+
+})

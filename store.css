@@ -296,7 +296,9 @@ input[type="range"]::-moz-range-thumb {
 .content1 {
   margin-top: 1rem;
 }
-
+#gridIcon{
+display: none;
+}
 
 
 
