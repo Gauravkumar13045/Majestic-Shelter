@@ -78,3 +78,13 @@ down.style.display="none";
 
 
 });
+
+let dropdownBtn = document.querySelector('.dropdownBtn');
+let itemList = document.querySelectorAll('.itemList');
+
+itemList.forEach(item => {
+  item.addEventListener('click', function (){
+
+    dropdownBtn.textContent = this.textContent
+  });
+});
