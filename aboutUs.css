@@ -24,7 +24,9 @@ body::selection {
   height: auto;
 
 }
-
+.menuhack{
+  left: -3rem;
+}
 #logo {
   width: 10em;
   height: auto;
@@ -110,11 +112,11 @@ body::selection {
 #papa {
 
   position: relative;
-  border-radius: 10  px;
+  border-radius: 10 px;
   filter: brightness(120%);
   border: none solid rgb(255, 255, 255);
   background-color: rgb(162, 162, 162);
-  image-resolution: 700dpi ;
+  image-resolution: 700dpi;
   /* image-rendering: pixelated; */
   /* top: -42rem; */
   /* right: 3rem; */
@@ -127,7 +129,8 @@ body::selection {
   font-size: 1.5vw;
   text-align: center;
 }
-#leaderBtn{
+
+#leaderBtn {
   background: linear-gradient(to right, rgb(90, 200, 245), rgb(191, 90, 242), rgb(255, 55, 95));
   color: rgb(255, 255, 255);
   border: none;
@@ -138,23 +141,28 @@ body::selection {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-#leaderBtn:hover{
+
+#leaderBtn:hover {
   background: linear-gradient(to right, rgb(255, 55, 95), rgb(191, 90, 242), rgb(90, 200, 245));
   font-weight: bold;
   transform: scale(1.06);
 }
-#leaderBtn2{
+
+#leaderBtn2 {
   transition: all 0.3s ease;
 
 }
-#leaderBtn2:hover{
+
+#leaderBtn2:hover {
   transform: scale(1.06);
 
 }
-.overlay{
- 
- position: relative;
+
+.overlay {
+
+  position: relative;
 }
+
 .scroll-animation {
   opacity: 0;
   transform: translateY(50px);
@@ -165,52 +173,79 @@ body::selection {
   opacity: 1;
   transform: translateY(0);
 }
-.fonter{
+
+.fonter {
   font-weight: bold;
 
 }
-.card-brand{
 
-    width: 100%; /* Make the image responsive */
-    height: 150px; /* Set a uniform height */
-    object-fit: cover; /* Ensure the image scales properly without distortion */
-    border-radius: 10%; /* Optional: Add rounded corners */
+.card-brand {
+
+  width: 100%;
+  /* Make the image responsive */
+  height: 150px;
+  /* Set a uniform height */
+  object-fit: cover;
+  /* Ensure the image scales properly without distortion */
+  border-radius: 10%;
+  /* Optional: Add rounded corners */
 
 }
 
 .catner {
-  width: 348px; /* Set the width */
-  height: 231.84px; /* Set the height */
-  object-fit: cover; /* Ensures the image scales properly without distortion */
-  border-radius: 10px; /* Optional: Add rounded corners */
+  width: 348px;
+  /* Set the width */
+  height: 231.84px;
+  /* Set the height */
+  object-fit: cover;
+  /* Ensures the image scales properly without distortion */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
 }
-.card img{
-  width: 348px; /* Set the width */
-  height: 231.84px; /* Set the height */
-  object-fit: cover; /* Ensures the image scales properly without distortion */
-  border-radius: 10px; /* Optional: Add rounded corners */
+
+.card img {
+  width: 348px;
+  /* Set the width */
+  height: 231.84px;
+  /* Set the height */
+  object-fit: cover;
+  /* Ensures the image scales properly without distortion */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
 }
+
 .overlay3 {
-  position: absolute; /* Position the overlay absolutely */
- 
-  width: 100%; /* Cover the full width */
-  height: 500%; /* Cover the full height */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  z-index: 2; /* Place the overlay behind all other content */
+  position: absolute;
+  /* Position the overlay absolutely */
+
+  width: 100%;
+  /* Cover the full width */
+  height: 500%;
+  /* Cover the full height */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  z-index: 2;
+  /* Place the overlay behind all other content */
 }
-.workedImage{
+
+.workedImage {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
   /* Combines the gradient and the image */
   width: 100%;
   height: 630px;
   position: relative;
-  top: 0; /* Adjusted to align properly */
+  top: 0;
+  /* Adjusted to align properly */
   left: 0;
   z-index: 1;
-  background-size: cover; /* Ensures the image covers the entire div */
-  background-position: center; /* Centers the image */
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
 }
-::after, ::before {
+
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -218,92 +253,99 @@ body::selection {
 
 
 .timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
-    padding: 5rem 0;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5rem 0;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background: skyblue;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-    animation: grow-line 2s ease-in-out forwards;
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: skyblue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  animation: grow-line 2s ease-in-out forwards;
 }
 
 @keyframes grow-line {
-    from { height: 0; }
-    to { height: 94%; }
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 94%;
+  }
 }
 
 .event {
-    position: relative;
-    width: 50%;
-    padding: 40px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  position: relative;
+  width: 50%;
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .event.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .event img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .event img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .event-text {
-    background: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .event-left {
-    left: 0;
-    text-align: right;
+  left: 0;
+  text-align: right;
 }
 
 .event-right {
-    left: 50%;
-    text-align: left;
+  left: 50%;
+  text-align: left;
 }
 
 .event-circle {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #ffffff;
-    border-radius: 50%;
-    left: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 4px solid white;
-    z-index: 2;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid white;
+  z-index: 2;
 }
 
 .event-circle:hover {
-    box-shadow: 0px 0px 15px skyblue;
+  box-shadow: 0px 0px 15px skyblue;
 }
-.purpose{
+
+.purpose {
   height: 20rem;
   background-color: transparent;
   color: #f0f0f0;
 }
+
 .footer {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -330,7 +372,8 @@ body::selection {
   transform: scale(1.2);
   color: #FFD700;
 }
-.head1{
+
+.head1 {
   color: skyblue;
 }
 
@@ -383,29 +426,37 @@ body::selection {
     height: 35rem;
   }
 
-  .card{
-   padding: 5px ;
-    height: 231.84px; /* Set the height */
-    object-fit: cover; /* Ensures the image scales properly without distortion */
-    border-radius: 10px; /* Optional: Add rounded corners */
+  .card {
+    padding: 5px;
+    height: 231.84px;
+    /* Set the height */
+    object-fit: cover;
+    /* Ensures the image scales properly without distortion */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
   }
-  .workedImage{
+
+  .workedImage {
     height: 500px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
 
   }
-.Subscription{
-  display: none;
-}
-.footer{
-  color: black;
-}
-.test1{
- display: none;
-}
-.test2{
-  display: block !important;
- }
+
+  .Subscription {
+    display: none;
+  }
+
+  .footer {
+    color: black;
+  }
+
+  .test1 {
+    display: none;
+  }
+
+  .test2 {
+    display: block !important;
+  }
 }
 
 
@@ -456,21 +507,25 @@ body::selection {
     background-image: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 0.9) 78%, rgb(0, 0, 0) 100%);
     height: 18rem;
   }
-  .workedImage{
+
+  .workedImage {
     height: 500px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%), url(workshop.png);
 
   }
-  .firstText{
+
+  .firstText {
     margin-left: 0.5rem !important;
   }
-  .event-text{
+
+  .event-text {
     overflow: scroll;
     width: 150%;
     z-index: 1;
 
   }
-  .event-circle{
+
+  .event-circle {
     z-index: -1;
   }
 
@@ -484,12 +539,17 @@ body::selection {
     left: 50%;
     margin-left: -2px;
     animation: grow-line 2s ease-in-out forwards;
-}
+  }
 
-@keyframes grow-line {
-    from { height: 0; }
-    to { height: 95%; }
-}
+  @keyframes grow-line {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 95%;
+    }
+  }
 
 
 

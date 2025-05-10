@@ -2,97 +2,360 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
-    <link rel="stylesheet" href="store.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/9ad8bac78a.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="logobg.png" type="image/x-icon" sizes="32x32">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <link rel="stylesheet" href="store.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/9ad8bac78a.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="logobg.png" type="image/x-icon" sizes="32x32">
 </head>
 
 
 <body>
-    <div class="image-container">
-        <a href="index.html"><img src="logobg.png" class="img-fluid" alt="logo" id="logo"></a>
-    </div>
+  <div class="image-container">
+    <a href="index.html"><img src="logobg.png" class="img-fluid" alt="logo" id="logo"></a>
+  </div>
 
-    <!-- navbar -->
+  <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 
-        <div class="container-fluid d-flex">
-          <!-- Toggle Button -->
-    
-          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <!-- Login Icon -->
-          <!-- <a href="login.html"><i class="fa-solid fa-circle-user fa-xl loginIcon ms-auto" style="color: #d0d0d0;"></i></a> -->
-          <a href="login.html"><img src="log.png" alt="Calender" width="40"></a>&NonBreakingSpace; &NonBreakingSpace;
-          <a href="#"><img src="cart.gif" alt="cart" width="40"></a>
-          &NonBreakingSpace;
-          &NonBreakingSpace;
-          &NonBreakingSpace;
-    
-          <!-- Search Bar -->
-    
-          <div class="d-flex flex-grow-1 ">
-            <form class="d-flex flex-grow-1 " role="search">
-              <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search"
-                id="searchInput1">
-              <input class="form-control me-2 w-40" type="search" placeholder="Search" aria-label="Search"
-                id="searchInput2">
-              <input class="form-control me-2 w-30" type="search" placeholder="Search" aria-label="Search"
-                id="searchInput3">
-              <button class="btn btn-outline-success" type="submit" id="submitBtn1">Search</button>
-              <button class="btn btn-outline-success" type="submit" id="submitBtn2">Search</button>
-              <button class="btn btn-outline-success" type="submit" id="submitBtn3">Search</button>
-    
-            </form>
-          </div>
-    
-          <!-- Collapsible Navbar Content -->
-          <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="store.html">Store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-    
-    
-    
-    
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle contactUs" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false" style="border: none; background-color: transparent; color: rgb(174, 174, 174);">
-                  Contact Us
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">FAQ</a></li>
-                  <li><a class="dropdown-item" href="#">Services</a></li>
-                  <li><a class="dropdown-item" href="#">Callback</a></li>
-                </ul>
-              </div>
+    <div class="container-fluid d-flex">
+      <!-- Toggle Button -->
+
+      <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Login Icon -->
+      <!-- <a href="login.html"><i class="fa-solid fa-circle-user fa-xl loginIcon ms-auto" style="color: #d0d0d0;"></i></a> -->
+      <a href="login.html"><img src="log.png" alt="Calender" width="40"></a>&NonBreakingSpace; &NonBreakingSpace;
+      <a href="#"><img src="cart.gif" alt="cart" width="40"></a>
+      &NonBreakingSpace;
+      &NonBreakingSpace;
+      &NonBreakingSpace;
+
+      <!-- Search Bar -->
+
+      <div class="d-flex flex-grow-1 ">
+        <form class="d-flex flex-grow-1 " role="search">
+          <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search"
+            id="searchInput1">
+          <input class="form-control me-2 w-40" type="search" placeholder="Search" aria-label="Search"
+            id="searchInput2">
+          <input class="form-control me-2 w-30" type="search" placeholder="Search" aria-label="Search"
+            id="searchInput3">
+          <button class="btn btn-outline-success" type="submit" id="submitBtn1">Search</button>
+          <button class="btn btn-outline-success" type="submit" id="submitBtn2">Search</button>
+          <button class="btn btn-outline-success" type="submit" id="submitBtn3">Search</button>
+
+        </form>
+      </div>
+
+      <!-- Collapsible Navbar Content -->
+      <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="store.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+
+
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle contactUs" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="border: none; background-color: transparent; color: rgb(174, 174, 174);">
+              Contact Us
+            </button>
+            <ul class="dropdown-menu" style="left: -1.9rem;">
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">Services</a></li>
+              <li><a class="dropdown-item" href="#">Callback</a></li>
             </ul>
           </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="startSection" style="position: relative; z-index: 1;">
+
+
+    <div class="storeImage">
+      <p style="color: black;">.</p>
+
+      <p style="color: rgb(255, 255, 255); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  margin-top: 5rem; "
+        class="firstText"><span style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  font-size: 8vw;
+          font-weight: bold;
+          margin-top: 5rem;
+          border-right: 2px solid white;
+          white-space: nowrap;
+          overflow: hidden;" class="firstText setjet">Shop <span id="dynamic-text"
+            style="color: tomato;">Now</span></span>
+      </p>
+    </div>
+
+
+    <div class="MainSection">
+
+      <h2 class="text-center fw-bold text-center f-1 setjet2" style="color: white;font-size: 4vw;">Explore Our Roofing
+        Sheets
+      </h2>
+
+
+      <br>
+      <br>
+
+      <div class="container-fluid" style="text-align: left;">
+        <div class="shopBy-section " style="border-radius: 10px;">
+          <div class="shopIt" style="border-radius: 10px 10px 0px 0px;">
+            <!-- <p class="shopIt-text1 fs-4" >&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;<b></b>Shop By</p> -->
+            <p>.</p>
+            <h5
+              style="font-weight: bold; background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255)); color: transparent; -webkit-background-clip: text; text-align: center; margin-top: -1.8rem;"
+              class="scroll-animation">
+              SHOP BY
+            </h5>
+          </div>
+
+          <div class="shopBy-section-content" style="margin: 1rem; font-weight: 500;">
+            <p class="fs-4 fw-bold">Categories</p>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck1">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Asbestos Roofing Sheets
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck2">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Corrugated Roofing Sheets
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck3">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Fiber Plastic Sheets
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck4">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Metallic Roofing sheet
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck5">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Barbet Wires
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck6">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                J shaped Hook
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck7">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Diamond mess fence
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck8">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                More Categories
+              </label>
+            </div>
+
+            <hr>
+            <p class="fs-4 fw-bold">Price</p>
+
+            <input type="number" class="numb w-25" value="0" min="0"
+              style="border-radius: 5px; bottom: 2px solid black;">
+            &NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+            <input type="number" class="numb w-25" value="50000" max="50000"
+              style="border-radius: 5px; bottom: 2px solid black;">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+            <button class="btn btn-primary FilterBtn" type="submit">Submit</button>
+
+            <br>
+            <br>
+            <input type="range" class="form-range" id="customRange1" min="0" max="50000" data-bs-theme="dark">
+
+            <br>
+            <br>
+            <hr>
+            <p class="fs-4 fw-bold">Manufacturers</p>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck1">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Tata BlueScope Steel
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck2">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                JSW Steel
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck3">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Bhushan Steel
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck4">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Ramco Industries Ltd
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick" type="checkbox" value="" id="defaultCheck5">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Kamdhenu Limited
+              </label>
+            </div>
+            <hr>
+
+            <p class="fs-4 fw-bold">Colors</p>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick red" type="checkbox" value="" id="defaultCheck1">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Red
+              </label>
+            </div>
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick blue" type="checkbox" value="" id="defaultCheck2">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Blue
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick white " type="checkbox" value=""
+                id="defaultCheck3">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                White
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck green">
+              <input class="form-check-input  tick green" type="checkbox" value="" id="defaultCheck4">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Green
+              </label>
+            </div>
+
+
+            <div class="form-check letCheck">
+              <input class="form-check-input  tick transparent" type="checkbox" value=""
+                id="defaultCheck5">&NonBreakingSpace;
+              <label class="form-check-label" for="defaultCheck1">
+                Transparent
+              </label>
+            </div>
+
+
+
+
+
+          </div>
         </div>
-      </nav>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container-fluid" style="text-align: left;">
+        <div class="filter-Header" style="border-radius: 10px; background-color: white;">
+
+          <p class="fw-bold fs-5"
+            style="margin: 1rem;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            Sort By
+          </p>
+
+          <div class="dropdown" style="left: 6rem; bottom: 3.1rem; width: 0%;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color: black;background-color: white;">
+              Position
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Popularity</a></li>
+              <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+              <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+              <li><a class="dropdown-item" href="#">Newest Arrivals</a></li>
+              <li><a class="dropdown-item" href="#">Discounts</a></li>
+
+            </ul>
+          </div>
+
+          <img src="upArrow.png" alt="up" style="margin-top: -5.5em; height: 2.5rem; margin-left: 12.3rem; cursor: pointer;"  id="up">
+          <img src="downArrow.png" alt="up" style="margin-top: -5.5em; height: 2.5rem; margin-left: 12.3rem; cursor: pointer;" id="down">
+
+
+          <p class="fw-bold fs-5"
+            style="margin: 1rem;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            Sort By
+          </p>
+        </div>
+      </div>
 
 
 
@@ -117,12 +380,262 @@
 
 
 
+      <div class="products-section" style="margin-top: -5rem; ">
+        <div class="container-fluid text-center">
+          <!-- <div class="row text-center justify-content-center" data-bs-theme="dark"> -->
+          <div class="controler">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3 ">
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="..." width="5rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top img-fluid" alt="..." width="5rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row applier">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="stylish.jpg" class="card-img-top img-fluid" alt="..." width="5rem">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="container-fluid" style="text-align: left; ">
+        <div class="bestSeller-header" style="border-radius: 10px;top: 2rem; height: 23rem
+          ;display: flex; background-color: white;">
+          <div class="shopIt2" style="border-radius: 10px 10px 0px 0px; width: 100%;">
+            <p>.</p>
+            <h5
+              style="font-weight: bold; background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255)); color: transparent; -webkit-background-clip: text; text-align: center; margin-top: -1.8rem; width:100% ;">
+              Best Sellers
+            </h5>
+
+
+
+            <div class="Best-seller-content">
+
+              <div class="content1">
+
+                <div class="row align-items-center">
+                  <!-- Image Column -->
+                  <div class="col-12 col-md-5 text-center text-md-start  ">
+                    <img src="stylish.jpg" class="img-fluid " alt="Owner Image"
+                      style="border-radius: 6px; width: 100%; margin-left: 0.5rem;" width="30%"
+                      oncontextmenu="return false" ;>
+                  </div>
+
+                  <!-- Text Column -->
+                  <div class="col-12 col-md-6">
+
+                    <p style="margin: 0px 0px 0px;">HEADING</p>
+                    <p style="margin: 0px 0px 0px;">rating</p>
+                    <h5 style="margin: 0px 0px 0px;"> 350</h5>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+              <div class="content1">
+                <div class="row align-items-center">
+                  <!-- Image Column -->
+                  <div class="col-12 col-md-5 text-center text-md-start  ">
+                    <img src="stylish.jpg" class="img-fluid " alt="Owner Image"
+                      style="border-radius: 6px; width: 100%; margin-left: 0.5rem;" width="30%"
+                      oncontextmenu="return false" ;>
+                  </div>
+
+                  <!-- Text Column -->
+                  <div class="col-12 col-md-6">
+
+                    <p style="margin: 0px 0px 0px;">HEADING</p>
+                    <p style="margin: 0px 0px 0px;">rating</p>
+                    <h5 style="margin: 0px 0px 0px;"> 350</h5>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="content1">
+                <div class="row align-items-center">
+                  <!-- Image Column -->
+                  <div class="col-12 col-md-5 text-center text-md-start  ">
+                    <img src="stylish.jpg" class="img-fluid " alt="Owner Image"
+                      style="border-radius: 6px; width: 100%; margin-left: 0.5rem;" width="30%"
+                      oncontextmenu="return false" ;>
+                  </div>
+
+                  <!-- Text Column -->
+                  <div class="col-12 col-md-6">
+
+                    <p style="margin: 0px 0px 0px;">HEADING</p>
+                    <p style="margin: 0px 0px 0px;">rating</p>
+                    <h5 style="margin: 0px 0px 0px;"> 350</h5>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- </div> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4WQkG8rC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
-        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
-        crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
     <script src="store.js"></script>
 </body>
 

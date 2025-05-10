@@ -1,162 +1,479 @@
 body {
-    background-image: url(image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
 
 
 }
 
 body::selection {
-    background-color: rgb(109, 196, 230);
+  background-color: rgb(109, 196, 230);
 }
 
 .nav-item:hover {
-    border: 1px solid white;
-    border-radius: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .img-fluid {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
 }
 
 .contactUs {
-    margin-top: 0.2em;
-    position: relative;
+  margin-top: 0.2em;
+  position: relative;
 
 }
 
 .contactUs:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .container-fluid {
-    text-align: right;
-    justify-content: right;
-    align-items: right;
+  text-align: right;
+  justify-content: right;
+  align-items: right;
 }
 
 .navbar-nav {
-    justify-content: flex-start;
-    display: none;
+  justify-content: flex-start;
+  display: none;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {
-    width: 10em;
-    height: auto;
-    position: relative;
-    z-index: 1;
+  width: 10em;
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
+
 #searchInput2 {
+  display: none;
+}
+
+#submitBtn2 {
+  display: none;
+}
+
+#searchInput3 {
+  display: none;
+}
+
+#submitBtn3 {
+  display: none;
+}
+
+.searchBar {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.storeImage {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0) 100%), url(blacker.jpg);
+  /* Combines the gradient and the image */
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 0;
+  /* Adjusted to align properly */
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  /* Ensures the image covers the entire div */
+  background-position: center;
+  /* Centers the image */
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.firstText {
+  text-align: center;
+}
+
+.setjet {
+  font-weight: bold;
+  font-size: 8vw !important;
+}
+
+.MainSection {
+  margin: 5rem;
+}
+
+.shopBy-section {
+  position: relative;
+  background-color: white;
+  width: 23%;
+  /* height: 61rem; */
+  float: left;
+}
+
+.shopIt {
+  /* border: 1px solid rgb(255, 3, 3); */
+  background-color: rgb(61, 61, 61);
+  /* background-image: url(image.png); */
+  height: 3rem;
+  display: block;
+
+}
+
+.shopIt2 {
+  /* border: 1px solid rgb(255, 3, 3); */
+  background-color: rgb(61, 61, 61);
+  /* background-image: url(image.png); */
+  height: 3rem;
+
+}
+
+.shopIt-text1 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.9vw;
+
+
+}
+
+.filter-Header {
+  display: grid;
+  position: relative;
+  border: 1px solid white;
+  float: right;
+  width: 68.5%;
+  height: 4rem;
+  right: 3rem;
+}
+
+#down{
+  display: none;
+}
+
+
+.products-section {
+  display: grid;
+  position: relative;
+  /* border: 1px solid white; */
+  width: 74%;
+  float: right;
+  top: 6rem;
+
+}
+
+.controler {
+  /* margin-left: 5rem; */
+  margin: 0rem;
+  padding-left: 0px !important;
+
+}
+
+.card {
+  /* width: 20rem !important; */
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  border: none !important;
+
+}
+
+.applier {
+  margin-top: 2.5rem !important;
+  margin-left: 0rem !important;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #000000;
+  content: "✔";
+}
+
+input[type="checkbox"].red {
+  background-color: red;
+  color: white;
+}
+
+input[type="checkbox"].blue {
+  background-color: blue;
+  color: white;
+}
+
+input[type="checkbox"].white {
+  background-color: white;
+  color: black;
+  border: 2px solid #000000;
+}
+
+input[type="checkbox"].green {
+  background-color: green;
+  color: black;
+  border: 2px solid #000000;
+}
+
+input[type="checkbox"].transparent {
+  background-color: rgb(186, 186, 186);
+  color: black;
+  border: 2px solid #000000;
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 8px;
+  /* Thickness of the track */
+  background: #ccc;
+  /* Track color */
+  border-radius: 4px;
+  border: 2px solid #000;
+  position: relative;
+}
+
+/* Style the thumb (slider handle) */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.letCheck:hover {
+  font-weight: bold;
+}
+
+.FilterBtn {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 500 !important;
+  border: none !important;
+  background-color: skyblue !important;
+  margin-top: -0.5rem;
+}
+
+.bestSeller-header {
+  /* border: 1px solid rgb(255, 255, 255); */
+  width: 23%;
+  position: relative;
+  display: block;
+  /* height: 25rem; */
+  /* padding: 0px 0px; */
+  background-color: white;
+  /* top: 55rem; */
+  /* display: none; */
+}
+
+.content1 {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+  .loginIcon {
+    display: none;
+    position: relative;
+    left: 0.5em;
+  }
+
+  #searchInput1 {
     display: none;
   }
-  
-  #submitBtn2 {
+
+  #submitBtn1 {
     display: none;
   }
-  
+
   #searchInput3 {
     display: none;
   }
-  
+
   #submitBtn3 {
     display: none;
   }
-  
-  .searchBar {
-    display: flex;
-    position: relative;
-    align-items: flex-start;
+
+  #searchInput2 {
+    display: block;
   }
 
-@media(max-width: 768px){
-    .loginIcon {
-        display: none;
-        position: relative;
-        left: 0.5em;
-      }
-    
-      #searchInput1 {
-        display: none;
-      }
-    
-      #submitBtn1 {
-        display: none;
-      }
-    
-      #searchInput3 {
-        display: none;
-      }
-    
-      #submitBtn3 {
-        display: none;
-      }
-    
-      #searchInput2 {
-        display: block;
-      }
-    
-      #submitBtn2 {
-        display: block;
-      }
-    
-      .loginIcon2 {
-        display: flex;
-        position: relative;
-      }
+  #submitBtn2 {
+    display: block;
+  }
+
+  .loginIcon2 {
+    display: flex;
+    position: relative;
+  }
+
+  .storeImage {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0) 100%), url(blacker.jpg);
+    /* Combines the gradient and the image */
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0;
+    /* Adjusted to align properly */
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+  }
+
+  .shopBy-section {
+
+    display: none;
+  }
+
+  .filter-Header {
+    display: none;
+
+
+  }
+
+  .MainSection {
+    margin: 0px;
+  }
+
+  .products-section {
+    display: grid;
+    position: relative;
+    /* border: 1px solid white; */
+    width: 100%;
+    float: left;
+    top: 6rem;
+
+  }
+
+  .setjet2 {
+    margin-top: 3rem;
+    font-size: 7vw !important;
+
+  }
+
 }
 
 
 
 
-
+@media (max-width: 576px) {
+  .setjet {
+    font-size: 12vw;
+    margin-top: 9rem !important;
+  }
+}
 
 
 
 
 @media (max-width: 600px) {
 
-    .loginIcon {
-      display: none;
-    }
-  
-  
-    #searchInput1 {
-      display: none;
-    }
-  
-    #submitBtn1 {
-      display: none;
-    }
-  
-    #searchInput2 {
-      display: none;
-    }
-  
-    #submitBtn2 {
-      display: none;
-    }
-  
-    #searchInput3 {
-      display: block;
-      position: relative;
-      margin-top: 1.1em;
-    }
-  
-    #submitBtn3 {
-      display: block;
-      position: relative;
-      margin-top: 1.1em;
-    }
+  .loginIcon {
+    display: none;
+  }
+
+
+  #searchInput1 {
+    display: none;
+  }
+
+  #submitBtn1 {
+    display: none;
+  }
+
+  #searchInput2 {
+    display: none;
+  }
+
+  #submitBtn2 {
+    display: none;
+  }
+
+  #searchInput3 {
+    display: block;
+    position: relative;
+    margin-top: 1.1em;
+  }
+
+  #submitBtn3 {
+    display: block;
+    position: relative;
+    margin-top: 1.1em;
+  }
+
+  .storeImage {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0) 100%), url(blacker.jpg);
+    /* Combines the gradient and the image */
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 0;
+    /* Adjusted to align properly */
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+  }
+
+  .setjet {
+    font-size: 10vw !important;
+  }
+
+  .shopBy-section {
+    display: none;
+  }
+
+  .filter-Header {
+    display: none;
+  }
+
 }
