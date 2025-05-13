@@ -118,4 +118,66 @@ listIcon.addEventListener("click", () => {
 })
 
 
+// const ratingInputs = document.querySelectorAll('input[name="star"]');
+//         const ratingValue = document.getElementById("ratingValue");
 
+//         ratingInputs.forEach(input => {
+//             input.addEventListener("change", () => {
+//                 ratingValue.innerText = input.value;
+//             });
+//         });
+
+document.querySelectorAll('.rating').forEach(rating => {
+      const stars = rating.querySelectorAll('.star');
+      let selectedRating = 0;
+
+      stars.forEach(star => {
+        star.addEventListener('mouseover', () => {
+          const hoverValue = parseInt(star.dataset.rating);
+          stars.forEach(s => {
+            s.classList.toggle('hover', parseInt(s.dataset.rating) <= hoverValue);
+          });
+        });
+
+        star.addEventListener('mouseout', () => {
+          stars.forEach(s => s.classList.remove('hover'));
+        });
+
+        star.addEventListener('click', () => {
+          selectedRating = parseInt(star.dataset.rating);
+          stars.forEach(s => {
+            s.classList.toggle('selected', parseInt(s.dataset.rating) <= selectedRating);
+          });
+          console.log('Selected rating for', rating.dataset.productId, ':', selectedRating);
+        });
+      });
+    });
+
+
+    // product manager star rating
+
+   document.querySelectorAll('.rating2').forEach(rating => {
+    const stars2 = rating.querySelectorAll('.star2');
+    let selectedRating = 0;
+
+    stars2.forEach(star => {
+        star.addEventListener('mouseover', () => {
+            const hoverValue = parseInt(star.dataset.rating); // ✅ Fix: Using the correct dataset property
+            stars2.forEach(s => {
+                s.classList.toggle('hover', parseInt(s.dataset.rating) <= hoverValue); // ✅ Fixed comparison
+            });
+        });
+
+        star.addEventListener('mouseout', () => {
+            stars2.forEach(s => s.classList.remove('hover'));
+        });
+
+        star.addEventListener('click', () => {
+            selectedRating = parseInt(star.dataset.rating);
+            stars2.forEach(s => {
+                s.classList.toggle('selected', parseInt(s.dataset.rating) <= selectedRating); // ✅ Fix: Using correct dataset reference
+            });
+            console.log('Selected rating for', rating.dataset.productId, ':', selectedRating);
+        });
+    });
+});
