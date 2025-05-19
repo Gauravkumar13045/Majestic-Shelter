@@ -80,6 +80,17 @@ body::selection {
     align-items: flex-start;
   }
 
+  .scroll-animation {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media(max-width: 768px){
     .loginIcon {
         display: none;
