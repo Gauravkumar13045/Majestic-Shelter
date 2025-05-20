@@ -183,16 +183,7 @@ document.querySelectorAll('.rating2').forEach(rating => {
 });
 
 
-document.addEventListener("scroll", function () {
-  document.querySelectorAll(".scroll-animation").forEach((el) => {
-    let position = el.getBoundingClientRect().top;
-    let windowHeight = window.innerHeight;
 
-    if (position < windowHeight - 100) {
-      el.classList.add("show");
-    }
-  });
-});
 
 let products = document.querySelector('.section-product1');
 let products2 = document.querySelector('.section-product2');
