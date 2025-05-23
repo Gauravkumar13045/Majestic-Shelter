@@ -686,5 +686,8 @@ input[type="range"]::-moz-range-thumb {
     top: 300rem;
 
   }
+  .fotcon{
+    top: -100rem;
+  }
 
 }

@@ -1,3 +1,5 @@
+// Format to use 
+
 document.addEventListener("scroll", function () {
     document.querySelectorAll(".scroll-animation").forEach((el) => {
       let position = el.getBoundingClientRect().top;
