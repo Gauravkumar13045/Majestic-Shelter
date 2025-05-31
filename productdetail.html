@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductDetail</title>
+    <link rel="stylesheet" href="productdetail.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/9ad8bac78a.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="logobg.png" type="image/x-icon" sizes="32x32">
+
+    <style>
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: rgb(255, 255, 255);
+        }
+
+        .breadcrumb-item.active {
+            color: #838383 !important;
+            font-weight: bolder !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="image-container">
+        <a href="index.html"><img src="logobg.png" class="img-fluid" alt="logo" id="logo"></a>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid d-flex">
+            <!-- Toggle Button -->
+
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Login Icon -->
+            <!-- <a href="login.html"><i class="fa-solid fa-circle-user fa-xl loginIcon ms-auto" style="color: #d0d0d0;"></i></a> -->
+            <a href="login.html"><img src="log.png" alt="Calender" width="40"></a>&NonBreakingSpace; &NonBreakingSpace;
+            <a href="#"><img src="cart.gif" alt="cart" width="40"></a>
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+            &NonBreakingSpace;
+
+            <!-- Search Bar -->
+
+            <div class="d-flex flex-grow-1 ">
+                <form class="d-flex flex-grow-1 " role="search">
+                    <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search"
+                        id="searchInput1">
+                    <input class="form-control me-2 w-40" type="search" placeholder="Search" aria-label="Search"
+                        id="searchInput2">
+                    <input class="form-control me-2 w-30" type="search" placeholder="Search" aria-label="Search"
+                        id="searchInput3">
+                    <button class="btn btn-outline-success" type="submit" id="submitBtn1">Search</button>
+                    <button class="btn btn-outline-success" type="submit" id="submitBtn2">Search</button>
+                    <button class="btn btn-outline-success" type="submit" id="submitBtn3">Search</button>
+
+                </form>
+            </div>
+
+            <!-- Collapsible Navbar Content -->
+            <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+
+
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle contactUs" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="border: none; background-color: transparent; color: rgb(174, 174, 174);">
+                            Contact Us
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#">Callback</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="blackbox"
+        style="height: 100rem; background-color: black; opacity: 0.6; z-index: -1;  width: 100%; position: absolute;">
+    </div>
+
+
+    <div class="container-fluid mt-4">
+
+        
+        <div class="row align-items-start">
+
+            <div class="col-12 col-md-6 position-relative">
+
+                <img src="(p) metal.png" alt="Product Image" id="main-product-image" class="img-fluid product-image"
+                    style="border-radius: 10px; max-height: 25rem;">
+                <br>
+                <div class="btngrp mt-3">
+                    <button type="button" class="btn btn-primary"
+                        style="width: 48%;background-color: rgb(234, 155, 9);border: none; padding: 18px 8px;font-weight: bold;"><i
+                            class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        &NonBreakingSpace;&NonBreakingSpace;ADD TO CART</button>
+                    <button type="button" class="btn btn-primary"
+                        style="width: 50%;background-color: orangered;border: none; padding: 18px 8px;margin-left: 0rem;font-weight: bold;"><i
+                            class="fa-solid fa-bolt" style="color: #ffffff;"></i>&NonBreakingSpace;&NonBreakingSpace;BUY
+                        NOW</button>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-12 col-md-6 text-md-end">
+                <nav aria-label="breadcrumb" class="mb-0 breadcrumb-none" style="float: left; ">
+                    <ol class="breadcrumb justify-content-end" style="text-decoration: none;">
+                        <li class="breadcrumb-item"><a href="index.html"
+                                style="text-decoration: none;color: white;">Home</a></li>
+                        <li class="breadcrumb-item"><a href="store.html"
+                                style="text-decoration: none;color: white;">Store</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Metal sheets</li>
+                    </ol>
+                </nav>
+                <br>
+                <br>
+                <h2 class="fw-bold mb-0" style="float: left; color: white;" class="product-name">Metal Sheets</h2>
+                <br>
+                <br>
+                <h5 class="fw-bold mb-0" style="float: left; color: white;" class="product-detail">Purely Iron & Tin
+                    Blended Strong Sheet </h5>
+                <br>
+
+                <h6 class="fw-bold mt-4" style="float: left; color: tomato;">Special Price</h6>
+                <br>
+                <br>
+                <br>
+                <h2 class="product-price mb-0" style="float: left; color: white; ">₹ 1375 &NonBreakingSpace;<h5><s
+                            style="color: gray; float: left; " class="product-old-price mt-2">₹ 2275</s></h5>
+                    <h4 class="product-discount " style="color: tomato; float: left;margin-left: 1.5rem;">40% off
+                    </h4>
+                </h2>
+                <br>
+                <br>
+
+                <h4 class="product-rating"
+                    style="color: white; float: left;border: 1px solid tomato; width: 6rem; text-align: center;border-radius: 2rem; height: 2.1rem;background-color: tomato; color: rgb(255, 255, 255);cursor: pointer;">
+                    4.2 <span class="star2" data-rating="5"><i class="fas fa-star fa-2xs"></i></span>
+                    <h5 style="color: white; float: left;" class="product-rating-count mt-1">
+                        &NonBreakingSpace;&NonBreakingSpace;1,431 ratings and 63 reviews</h5>
+                </h4>
+                <br>
+                <br>
+                <h6 style="color: rgb(134, 134, 134); float: left;" class="mt-3">Color</h6>
+                <br>
+                <div class="product-image-colorSection-div mt-3" style="margin-left: 2rem;">
+
+                    <img src="(p) metal.png" class="product-image-colorSection img-fluid"
+                        style="width: 15.5%;object-fit: cover; float: left;margin: 0.5rem;">
+                    <img src="(p)metal.png" class="product-image-colorSection img-fluid"
+                        style="width: 9%; object-fit: cover;float: left; margin: 0.5rem;">
+                    <img src="metalroof.png" class="product-image-colorSection img-fluid"
+                        style="width: 18%; object-fit: cover;float: left;margin: 0.5rem;">
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h6 style="color: rgb(134, 134, 134); float: left;">Size</h6>
+                <div class="div-sizes container-fluid mt-4" style=" color: white;  ">
+                    <span class="border-box">6 ft</span>
+                    <span class="border-box">8 ft</span>
+                    <span class="border-box">10 ft</span>
+                    <span class="border-box">12 ft</span>
+                    <span class="border-box">14 ft</span>
+                    <span class="border-box">16 ft</span>
+                    <span class="border-box">18 ft</span>
+                    <span class="border-box">20 ft</span>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+    <script src="productdetail.js"></script>
+</body>
+
+</html>

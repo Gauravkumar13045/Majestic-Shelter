@@ -582,7 +582,7 @@ input[type="range"]::-moz-range-thumb {
   .footer {
     position: relative;
     display: block;
-    top: 300rem;
+    /* top: 0rem; */
     
   }
 
@@ -683,7 +683,8 @@ input[type="range"]::-moz-range-thumb {
   .footer {
     position: relative;
     display: block;
-    top: 300rem;
+    top: 100rem;
+   
 
   }
   .fotcon{
