@@ -11,6 +11,16 @@ body {
   z-index: -1;
 
 }
+body::before {
+  content: "";
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% darkness */
+  z-index: -1; /* Put it behind all content */
+}
 
 body::selection {
     background-color: rgb(109, 196, 230);
@@ -119,12 +129,101 @@ body::selection {
  
 
 }
- 
+.border-box:hover{
+  border: 2px solid tomato;
+  background-color: tomato;
+  /* color: rgb(0, 0, 0); */
+}
+.btngrp2{
+  display: none;
+}
+    .scroll-column {
+      height: 100vh;
+      overflow-y: auto;
+      padding-right: 2rem;
+    }
 
+    .sticky-column {
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+      padding-right: 1rem;
+    }
+        .result {
+      margin-top: 20px;
+    }
 
+    .result p {
+      margin: 5px 0;
+    }
 
+    .error {
+      color: red;
+    }
+.div-date{
+  font-weight: bold;
+  color: green;
+}
+/* 
+.left-panel {
+  flex: 1;
+  padding: 2rem;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
 
+.right-panel {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: scroll;
+  background-color: #2b2b2b;
+}
+ .scroll-container {
+      display: contents;
+      height: 100vh;
+      overflow: scroll;
+    
+    }
 
+    .scroll-container .left-panel{
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+      background-color: #f0f0f0;
+    }
+
+    .scroll-container .right-panel{
+      flex: 1;
+      padding: 2rem;
+      overflow-y: scroll;
+      background-color: #f0f0f0;
+    } */
+
+.container-hit {
+    display: flex;
+}
+
+.left-section {
+    /* width: 50%; */
+    /* position: relative; */
+
+    height: auto; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.right-section {
+    
+    margin-left: 0px;
+    position: relative;
+    padding: 0%;
+    /* margin-left: 40%;  */
+    overflow-y: scroll;
+    height: 35rem; 
+    scrollbar-width: none;
+}
 
 
 
@@ -173,6 +272,23 @@ body::selection {
       }
       .breadcrumb-none{
       display: none !important;
+    }
+    .btngrp{
+      display: none;
+    }
+    .left-section{
+    overflow-y: visible;
+    width: 100%;
+
+    }
+     .right-section{
+    overflow-y: visible;
+    width: 100% !important;
+
+    }
+
+    .rightdiv-responser{
+      width: 100% !important;
     }
 }
 
