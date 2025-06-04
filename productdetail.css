@@ -255,6 +255,28 @@ body::selection {
   color: skyblue;
 }
 
+.fixed-bottom-btns {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .fixed-bottom-btns {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 70px; /* Prevent content from hiding behind buttons */
+  }
+}
 
 
 
@@ -370,6 +392,9 @@ body::selection {
     }
     .collapser{
       margin-top: 1rem;
+    }
+    .btngrp2{
+      display: block;
     }
     
 }
