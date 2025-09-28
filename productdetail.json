@@ -1,0 +1,77 @@
+[
+    {
+
+        "product-id": 1,
+        "product-image": "(p) metal.png",
+        "product-Name": "Metal Sheet",
+        "product-detail": "Purely Iron & Tin Blended Strong Sheet",
+        "product-price": 1375,
+        "product-old-price": 2275,
+        "product-rating": 4.2,
+        "product-rating-count": "1,431 ratings and 63 reviews",
+        "product-image-colorSection" : ["c:\\images\\color1.jpg", "c:\\images\\color2.jpg", "c:\\images\\color3.jpg"],
+        "border-box" : ["6ft", "8ft", "10ft", "12ft", "14ft", "16ft", "18ft", "20ft"],
+        "img-customer-upload" :  "(r) metalsheet.png"
+
+    },
+
+       {
+        "product-id": 2,
+        "product-image": "(p)fenceMess.png",
+        "product-Name": "Diamond Shaped Fence",
+        "product-detail": "Purely Iron & Tin Blended Strong Sheet",
+        "product-price": 110.00,
+        "product-old-price": 115,
+        "product-rating": 4.8,
+        "product-rating-count": "2,251 ratings and 56 reviews",
+        "product-image-colorSection" : ["c:\\images\\color1.jpg", "c:\\images\\color2.jpg", "c:\\images\\color3.jpg"],
+        "border-box": ["6ft", "8ft", "10ft", "12ft", "14ft", "16ft", "18ft", "20ft"],
+        "img-customer-upload" :  "(r) metalsheet.png"
+
+        },
+        
+        {
+            "product-id": 3,
+        "product-image": "(p) hooks.png",
+        "product-Name": "Hooks",
+        "product-detail": "Purely Iron & Tin Blended Strong Sheet",
+        "product-price": 15,
+        "product-old-price": 18,
+        "product-rating": 5,
+        "product-rating-count": "2,989 ratings and 53 reviews",
+        "product-image-colorSection" : ["c:\\images\\color1.jpg", "c:\\images\\color2.jpg", "c:\\images\\color3.jpg"],
+        "border-box": ["6ft", "8ft", "10ft", "12ft", "14ft", "16ft", "18ft", "20ft"],
+        "img-customer-upload" :  "c:\\images\\customer1.jpg"
+
+    },     
+    
+    {
+        "product-id": 4,
+        "product-image": "(p) tin.png",
+        "product-Name": "Corrugated Tin Sheets",
+        "product-detail": "Purely Iron & Tin Blended Strong Sheet",
+        "product-price": 925,
+        "product-old-price": 1575,
+        "product-rating": 4.7,
+        "product-rating-count": "1,431 ratings and 63 reviews",
+        "product-image-colorSection" : ["c:\\images\\color1.jpg", "c:\\images\\color2.jpg", "c:\\images\\color3.jpg"],
+        "border-box": ["6ft", "8ft", "10ft", "12ft", "14ft", "16ft", "18ft", "20ft"],
+        "img-customer-upload" :  "c:\\images\\customer1.jpg"
+
+        },
+
+        {
+            "product-id": 5,
+            "product-image": "c:\\images\\product1.jpg",
+            "product-Name": "Metal Sheet",
+            "product-detail": "Purely Iron & Tin Blended Strong Sheet",
+            "product-price": 1375,
+            "product-old-price": 2275,
+            "product-rating": 4.2,
+            "product-rating-count": "1,431 ratings and 63 reviews",
+            "product-image-colorSection" : ["c:\\images\\color1.jpg", "c:\\images\\color2.jpg", "c:\\images\\color3.jpg"],
+            "border-box": ["6ft", "8ft", "10ft", "12ft", "14ft", "16ft", "18ft", "20ft"],
+            "img-customer-upload" :  "c:\\images\\customer1.jpg"
+
+        }
+]
